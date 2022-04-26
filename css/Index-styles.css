@@ -12,3 +12,27 @@ body {
     height: 123px"
 
 }
+
+.description {
+    color: #EE3643;
+    font-size: 16;
+    font-style: italic;
+    background-color: rgb(241, 245, 247);
+    line-height: 23px;
+    text-align: left;
+}
+
+header li a {
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.telephone {
+    font-weight: 700;
+    font-size: 21px;
+    color: #EE3643
+}
