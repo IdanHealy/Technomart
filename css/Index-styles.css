@@ -52,12 +52,13 @@ form input:focus {
     height: 320px;
 }
 
-.developers_section div {
-    margin: 20px;
+.developers_logos div {
+    margin: 10px;
     width: 220px;
     height: 145px;
     border: lightgray solid 1px;
     float: left;
+    padding: 0px;
 }
 
 .developers_section {
