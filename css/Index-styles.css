@@ -65,3 +65,8 @@ form input:focus {
     width: 940px;
     height: 419px;
 }
+
+.developers_logos img {
+    position: relative;
+    text-align: center;
+}
