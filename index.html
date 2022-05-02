@@ -5,42 +5,44 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="icon" href="Icon-Composer-icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/Index-styles.css">
 </head>
 
 <body>
     <header>
-        <section class="header">
-            <a href=" # "><img src="img/decorations/Main-Logo.svg" alt="Логотип Техномарт" width="220" height="47"></a>
-            <div class="search">
-                <form>
+        <section class="header_wrapper">
+            <section class="menu_container">
+                <a href=" # "><img src="img/decorations/Main-Logo.svg" alt="Логотип Техномарт" width="220" height="47"></a>
+                <div class="search">
                     <input type="search" placeholder="Поиск:">
-                </form>
-            </div>
-            <ul>
-                <label>
-                <img src="img/decorations/icon-bookmark.svg" alt="" width="15" height="15">
-                <li><a href="# ">Закладки</a></li>
-              </label>
-                <label>
-                  <img src="img/decorations/korsina-icon.svg" alt="" width="15" height="15">
-                <li><a href="# ">Корзина</a></li>
-              </label>
-                <li> <a href="# ">Офомить заказ</a></li>
-            </ul>
+                </div>
+                <div>
+                    <img src="img/decorations/icon-bookmark.svg" alt="" width="15" height="15">
+                    <a href="# ">Закладки</a></div>
+                <div>
+                    <img src="img/decorations/korsina-icon.svg" alt="" width="15" height="15">
+                    <a href="# ">Корзина</a>
+                </div>
+                <div>
+                    <a href="# ">Офомить заказ</a>
+                </div>
+            </section>
         </section>
     </header>
-    <section>
-        <div class="description">
+    <section class="description_container">
+        <div>
             <p>Интернет магазин<br>строительных товаров<br>и инструментов для ремонта</p>
         </div>
-        <label><img src="img/decorations/icon-phone.svg" width="15" height="15"> <a class="telephone" href="tel:+78005558628"><pre>+7 800 555-86-28</pre></a>г. Санкт-Петербург, Наб. реки Карповки,5 лит П</label>
-        <ul type="none ">
-            <li><label> <img src="img/decorations/icon-login.svg" width="19" height="19"><a href="#">Войти</a></label></li>
-            <li><a href="#">Регистрация</a></li>
-        </ul>
+        <div class="phone_and_adress"><img src="img/decorations/icon-phone.svg" width="15" height="15"> <a class="telephone" href="tel:+78005558628"><pre>+7 800 555-86-28</pre></a></div>
+        <div> г. Санкт-Петербург, Наб. реки Карповки,5 лит П</div>
+        <div><label> <img src="img/decorations/icon-login.svg" width="19" height="19"><a href="#">Войти</a></label></div>
+        <div><a href="#">Регистрация</a></div>
+
     </section>
-    <nav>
+    <nav class="main_navigation">
         <ul>
             <li><a href="#">Главная</a></li>
             <li><a href="#company">Компания</a></li>
