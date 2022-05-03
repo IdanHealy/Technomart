@@ -43,7 +43,7 @@
         height: 47px;
         color: white;
         background-color: #EE3643;
-        background-image: url(/Project_Technomart/Technomart-Project-for-HTMLAcademy/img/Logos/logo-technomart.png);
+        background-image: url(/Technomart-Project-for-HTMLAcademy/img/Logos/logo-technomart.png);
         background-repeat: no-repeat;
         background-position: 50% 50%;
         box-shadow: 0px 4px 0px 0px #00000060;
@@ -250,7 +250,7 @@
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0px;
-        background-image: url(/Project_Technomart/Technomart-Project-for-HTMLAcademy/img/content/perforators-first-image.jpg);
+        background-image: url(/Technomart-Project-for-HTMLAcademy/img/content/perforators-first-image.jpg);
     }
     
     .item_presetation {
