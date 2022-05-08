@@ -197,6 +197,11 @@ a {
     display: block;
 }
 
+.services_and_adversting {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .services_and_adversting .saa1 {
     max-width: 940px;
     height: 123px;
@@ -402,6 +407,85 @@ a {
     margin-right: auto;
     height: 522px;
     background: #F1F5F7;
+    margin-bottom: 70px;
+}
+
+.contacts_and_map {
+    width: 940px;
+    height: 356px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_and_map h1 {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-family: Cuprum;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.contacts_and_map p {
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contacts_and_map ul {
+    margin-top: 1px;
+    list-style-type: none;
+    font-family: Cuprum;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.technomart_company {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    height: 355px;
+}
+
+.map {
+    width: 300px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts_button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 220px;
+    height: 38px;
+    background-color: #EE3643;
+    border: none;
+}
+
+.map_button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 300px;
+    height: 38px;
+    background-color: #EE3643;
+    border: none;
 }
 
 .mainpagefooter {
