@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    text-decoration: none;
+}
+
 .header_content {
     max-width: auto;
     height: 320px;
