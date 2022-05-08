@@ -43,6 +43,7 @@ button {
     align-items: center;
     justify-content: center;
     background-image: url(https://github.com/IdanHealy/Technomart-Project-for-HTMLAcademy/blob/main/img/Logos/logo-technomart1.png);
+    background-repeat: none;
 }
 
 .MainPageLogo a {
