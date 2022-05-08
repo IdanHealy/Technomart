@@ -1,4 +1,4 @@
-a {
+button a {
     text-decoration: none;
 }
 
@@ -517,4 +517,81 @@ nav {
     margin-left: auto;
     margin-right: auto;
     background-color: #293449;
+}
+
+.logo_footer {
+    margin-right: 134px;
+}
+
+.footer_navigation ul {
+    margin-top: 37px;
+    width: 546px;
+    height: 24px;
+    padding: 0%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style-type: none;
+    color: #F1F5F7;
+    background-color: #293449;
+    font-family: Cuprum;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.footer_content_first {
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_navigation a {
+    color: #F1F5F7;
+    text-decoration: none;
+}
+
+.footer_content_second {
+    font-family: Cuprum;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer_content_second ul {
+    margin-top: 37px;
+    width: 546px;
+    height: 24px;
+    padding: 0%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style-type: none;
+    color: #F1F5F7;
+    background-color: #293449;
+    font-family: Cuprum;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.footer_content_second a {
+    color: #FFD180;
+    text-decoration: none;
 }
