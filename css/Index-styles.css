@@ -193,16 +193,26 @@ a {
     display: block;
 }
 
-.services_and_adversting {
+.services_and_adversting .saa1 {
     max-width: 940px;
-    height: 409px;
+    height: 123px;
     background-color: white;
-    border: lightgray solid 1px;
     margin-top: 59px;
-    margin-bottom: 59px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+}
+
+.services_and_adversting .saa2 {
+    max-width: 940px;
+    max-height: 266px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .saa1 {
@@ -215,7 +225,13 @@ a {
 .saa2 {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+}
+
+.saa3 {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .saa_item {
