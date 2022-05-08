@@ -42,8 +42,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/Technomart-Project-for-HTMLAcademy/img/Logos/logo-technomart1.png);
-    background-color: transparent;
+    background-image: url("https://github.com/IdanHealy/Technomart-Project-for-HTMLAcademy/blob/main/img/Logos/logo-technomart1.png");
 }
 
 .MainPageLogo a {
