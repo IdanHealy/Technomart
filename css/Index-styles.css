@@ -12,7 +12,7 @@ a {
     max-width: auto;
     height: 42px;
     background-color: #293449;
-    margin-bottom: 41px;
+    margin-bottom: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,10 +84,20 @@ a {
 
 .description_wrapper {
     max-width: 100%;
+    height: 320px;
+    display: block;
+    height: 273px;
+    background-color: #F1F5F7;
+    margin-bottom: 59px;
+}
+
+.description_content {
+    max-width: 940px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .description {
@@ -101,8 +111,6 @@ a {
     color: #EE3643;
     margin: 0px;
     display: flex;
-    margin-left: 130px;
-    margin-right: 113px;
 }
 
 .number div {
@@ -110,7 +118,6 @@ a {
     height: 45px;
     border: white solid 5px;
     text-align: center;
-    margin-right: 69px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +166,6 @@ a {
 .registration_link {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 130px;
     width: 150px;
     height: 45px;
     font-family: Cuprum;
@@ -184,7 +190,6 @@ nav {
 .indexpagenav ul {
     padding: 0%;
     margin-right: auto;
-    margin-top: 40px;
     margin-left: auto;
     align-items: center;
     display: flex;
@@ -201,15 +206,19 @@ nav {
     font-weight: 400;
     justify-content: space-around;
     text-align: center;
+    margin-bottom: 59px;
 }
 
 .main_content {
+    margin-top: 59px;
     display: block;
 }
 
 .services_and_adversting {
+    margin-top: 59px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 59px;
 }
 
 .services_and_adversting .saa1 {
