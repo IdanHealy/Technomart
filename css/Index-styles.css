@@ -13,13 +13,15 @@
 }
 
 .header_content {
-    width: 1920px;
+    width: 100%;
     height: 320px;
     border: 1px solid #F1F5F7;
     background-color: #F1F5F7;
     padding: 0px;
     margin: 0px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header_wrapper {
