@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     width: 100%;
     margin-left: auto;
@@ -281,12 +285,12 @@
 }
 
 .item_presentation-button {
+    margin-top: auto;
     margin-left: 734px;
     margin-bottom: 26px;
 }
 
 .item_presetation button {
-    text-decoration: none;
     display: inline-block;
     width: 192px;
     height: 38px;
@@ -297,6 +301,9 @@
     line-height: 18px;
     letter-spacing: 0px;
     text-align: center;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .item_presentation-header {
