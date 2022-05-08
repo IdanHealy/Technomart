@@ -214,6 +214,7 @@ a {
 
 .saa2 {
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -249,7 +250,6 @@ a {
 }
 
 .perforators {
-    float: left;
     background-color: grey;
     width: 620px;
     height: 266px;
