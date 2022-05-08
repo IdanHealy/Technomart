@@ -39,11 +39,17 @@ button {
 .MainPageLogo {
     width: 220px;
     height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Technomart-Project-for-HTMLAcademy/img/Logos/logo-technomart1.png);
+    background-color: transparent;
+}
+
+.MainPageLogo a {
+    text-decoration: none;
     color: white;
-    background-color: #EE3643;
-    background-image: url(/Technomart-Project-for-HTMLAcademy/img/Logos/logo-technomart.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    text-transform: uppercase;
 }
 
 .searchform input {
