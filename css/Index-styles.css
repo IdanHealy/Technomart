@@ -336,6 +336,10 @@ a {
     text-align: center;
 }
 
+.item_container img {
+    vertical-align: center;
+}
+
 .developers {
     margin-bottom: 70px;
     margin-top: 59px;
@@ -360,6 +364,7 @@ a {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .developers_header button {
@@ -377,15 +382,20 @@ a {
 }
 
 .developers_logos {
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .developers_logos_card {
+    display: flex;
     width: 220px;
     height: 145px;
     border: #eaeaea solid 1px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .credit_delivery_warranty {
