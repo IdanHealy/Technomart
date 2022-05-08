@@ -1,286 +1,364 @@
-    .body {
-        margin: 0%;
-        padding: 0%;
-    }
-    
-    .header {
-        margin: 0%;
-        padding: 0%;
-        display: block;
-    }
-    
-    .header_content {
-        width: 1200px;
-        height: 320px;
-        border: 1px solid #F1F5F7;
-        background-color: #F1F5F7;
-        padding: 0px;
-        margin: 0px;
-        display: block;
-    }
-    
-    .header_wrapper {
-        width: 1200px;
-        height: 42px;
-        background-color: #293449;
-        padding: 0px;
-        margin: 0px;
-        display: inline-flex;
-        flex-wrap: wrap;
-        font-family: 'Cuprum';
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: white;
-        justify-content: space-between;
-    }
-    
-    .MainPageLogo {
-        margin-left: 130px;
-        width: 220px;
-        height: 47px;
-        color: white;
-        background-color: #EE3643;
-        background-image: url(/Technomart-Project-for-HTMLAcademy/img/Logos/logo-technomart.png);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        box-shadow: 0px 4px 0px 0px #00000060;
-    }
-    
-    .searchform input {
-        background-color: transparent;
-        border: none;
-        font-family: 'Cuprum';
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: white;
-    }
-    
-    .bookmarks_link {
-        width: 149px;
-        height: 47px;
-    }
-    
-    .basket_link {
-        width: 149px;
-        height: 47px;
-    }
-    
-    .ordening_link {
-        width: 150px;
-        height: 42px;
-        background-color: #63A63E;
-        color: white;
-        margin-right: 130px;
-    }
-    
-    .description_wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .description {
-        width: 197px;
-        height: 71px;
-        font-family: Cuprum;
-        font-size: 16px;
-        font-style: italic;
-        font-weight: 400;
-        line-height: 23px;
-        color: #EE3643;
-        margin: 0px;
-        display: flex;
-        margin-left: 130px;
-        margin-right: 113px;
-    }
-    
-    .number div {
-        width: 270px;
-        height: 45px;
-        border: white solid 5px;
-        text-align: center;
-        margin-right: 69px;
-    }
-    
-    .number>div>a {
-        font-family: Cuprum;
-        font-size: 21px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0px;
-        color: #EE3643;
-        border: none;
-    }
-    
-    .number>:nth-child(2) {
-        font-family: Cuprum;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-    
-    .enter_link {
-        width: 121px;
-        height: 45px;
-        font-family: Cuprum;
-        font-size: 21px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0px;
-        text-align: center;
-        background-color: white;
-        margin-right: 10px;
-    }
-    
-    .registration_link {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: 130px;
-        width: 150px;
-        height: 45px;
-        font-family: Cuprum;
-        font-size: 21px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0px;
-        text-align: center;
-        background-color: white;
-    }
-    
-    .indexpagenav ul {
-        margin-top: 40px;
-        margin-left: 130px;
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        width: 940px;
-        height: 60px;
-        text-decoration: none;
-        list-style-type: none;
-        color: white;
-        background-color: #32425C;
-        font-family: Cuprum;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0px;
-        justify-content: space-between;
-        text-align: center;
-        margin-right: 130px;
-    }
-    
-    .contacts a {
-        text-align: left;
-    }
-    
-    .main_content {
-        display: block;
-    }
-    
-    .services_and_adversting {
-        width: 940px;
-        height: 409px;
-        background-color: white;
-        border: lightgray solid 1px;
-        margin-top: 59px;
-        margin-bottom: 59px;
-        margin-left: 130px;
-        margin-right: 130px;
-        justify-content: space-between;
-    }
-    
-    .saa1 {
-        width: 940px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .saa2 {
-        display: flex;
-        margin-top: 20px;
-    }
-    
-    .saa_item {
-        width: 300px;
-        height: 123px;
-        color: white;
-        font-family: Cuprum;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0px;
-    }
-    
-    .materials {
-        background-color: #FFBF47;
-    }
-    
-    .instrument {
-        background-color: #3BBCE3;
-    }
-    
-    .technics {
-        background-color: #DC91D8;
-    }
-    
-    .sales {
-        background-color: #8ED78F;
-    }
-    
-    .delivery {
-        background-color: #FFBF47;
-    }
-    
-    .perforators {
-        background-color: grey;
-        width: 620px;
-        height: 266px;
-        color: white;
-        font-family: Cuprum;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0px;
-        background-image: url(/Technomart-Project-for-HTMLAcademy/img/content/perforators-first-image.jpg);
-    }
-    
-    .item_presetation {
-        display: flex;
-        flex-wrap: wrap;
-        border: lightgray solid 1px;
-        width: 940px;
-        height: 427px;
-        margin-left: 130px;
-        margin-bottom: 70px;
-    }
-    
-    .developers {
-        width: 940px;
-        height: 419px;
-        margin-left: 130px;
-        margin-bottom: 70px;
-        border: lightgray solid 1px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .credit_delivery_warranty {
-        width: 1200px;
-        height: 522px;
-        background: #F1F5F7;
-    }
-    
-    .mainpagefooter {
-        height: 330px;
-        width: 1200px;
-        background-color: #293449;
-    }
+.body {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0%;
+    padding: 0%;
+    display: block;
+}
+
+.header_content {
+    width: 100%;
+    height: 320px;
+    border: 1px solid #F1F5F7;
+    background-color: #F1F5F7;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.header_wrapper {
+    width: 100%;
+    height: 42px;
+    background-color: #293449;
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+    justify-content: space-between;
+}
+
+.MainPageLogo {
+    margin-left: 130px;
+    width: 220px;
+    height: 47px;
+    color: white;
+    background-color: #EE3643;
+    background-image: url(/Technomart-Project-for-HTMLAcademy/img/Logos/logo-technomart.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0px 4px 0px 0px #00000060;
+}
+
+.searchform input {
+    background-color: transparent;
+    border: none;
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
+.bookmarks_link {
+    width: 149px;
+    height: 47px;
+}
+
+.basket_link {
+    width: 149px;
+    height: 47px;
+}
+
+.ordening_link {
+    width: 150px;
+    height: 42px;
+    background-color: #63A63E;
+    color: white;
+    margin-right: 130px;
+}
+
+.description_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.description {
+    width: 197px;
+    height: 71px;
+    font-family: Cuprum;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+    color: #EE3643;
+    margin: 0px;
+    display: flex;
+    margin-left: 130px;
+    margin-right: 113px;
+}
+
+.number div {
+    width: 270px;
+    height: 45px;
+    border: white solid 5px;
+    text-align: center;
+    margin-right: 69px;
+}
+
+.number>div>a {
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #EE3643;
+    border: none;
+}
+
+.number>:nth-child(2) {
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.enter_link {
+    width: 121px;
+    height: 45px;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.registration_link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 130px;
+    width: 150px;
+    height: 45px;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    background-color: white;
+}
+
+.indexpagenav ul {
+    margin-right: auto;
+    margin-top: 40px;
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 60px;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    background-color: #32425C;
+    font-family: Cuprum;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contacts a {
+    text-align: left;
+}
+
+.main_content {
+    display: block;
+}
+
+.services_and_adversting {
+    width: 940px;
+    height: 409px;
+    background-color: white;
+    border: lightgray solid 1px;
+    margin-top: 59px;
+    margin-bottom: 59px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.saa1 {
+    width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.saa2 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.saa_item {
+    width: 300px;
+    height: 123px;
+    color: white;
+    font-family: Cuprum;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+.materials {
+    background-color: #FFBF47;
+}
+
+.instrument {
+    background-color: #3BBCE3;
+}
+
+.technics {
+    background-color: #DC91D8;
+}
+
+.sales {
+    background-color: #8ED78F;
+}
+
+.delivery {
+    background-color: #FFBF47;
+}
+
+.perforators {
+    float: left;
+    background-color: grey;
+    width: 620px;
+    height: 266px;
+    color: white;
+    font-family: Cuprum;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    background-image: url(/Technomart-Project-for-HTMLAcademy/img/content/perforators-first-image.jpg);
+}
+
+.item_presetation {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border: lightgray solid 1px;
+    width: 940px;
+    height: 427px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item_presetation button {
+    text-decoration: none;
+    display: inline-block;
+    width: 192px;
+    height: 38px;
+    background-color: #EE3643;
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.item_presentation-header {
+    width: 940px;
+    height: 89px;
+    background-color: #F9F5F0;
+    font-family: Cuprum;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item_container {
+    width: 220px;
+    height: 318px;
+    border: #eaeaea solid 1px;
+}
+
+.developers {
+    margin-top: 59px;
+    width: 940px;
+    height: 419px;
+    margin-left: auto;
+    margin-right: auto;
+    border: lightgray solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.developers_header {
+    width: 940px;
+    height: 89px;
+    background-color: #F9F5F0;
+    font-family: Cuprum;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.developers_header button {
+    text-decoration: none;
+    display: inline-block;
+    width: 192px;
+    height: 38px;
+    background-color: #EE3643;
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.developers_logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.developers_logos_card {
+    width: 220px;
+    height: 145px;
+}
+
+.credit_delivery_warranty {
+    width: 1200px;
+    height: 522px;
+    background: #F1F5F7;
+}
+
+.mainpagefooter {
+    height: 330px;
+    width: 1200px;
+    background-color: #293449;
+}
