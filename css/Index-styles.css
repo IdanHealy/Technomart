@@ -1,52 +1,29 @@
-.body {
-    margin: 0%;
-    padding: 0%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none;
 }
 
-.header {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0%;
-    padding: 0%;
-    display: block;
-}
-
 .header_content {
-    width: 100%;
+    max-width: auto;
     height: 320px;
-    border: 1px solid #F1F5F7;
     background-color: #F1F5F7;
-    padding: 0px;
-    margin: 0px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .header_wrapper {
-    width: 100%;
+    max-width: auto;
     height: 42px;
     background-color: #293449;
     padding: 0px;
     margin: 0px;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     font-family: 'Cuprum';
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
-    text-align: left;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 41px;
 }
 
 .MainPageLogo {
@@ -71,16 +48,25 @@ a {
     letter-spacing: 0px;
     text-align: left;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bookmarks_link {
     width: 149px;
     height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .basket_link {
     width: 149px;
     height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ordening_link {
@@ -89,12 +75,17 @@ a {
     background-color: #63A63E;
     color: white;
     margin-right: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .description_wrapper {
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: baseline;
 }
 
 .description {
@@ -150,6 +141,9 @@ a {
     text-align: center;
     background-color: white;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .registration_link {
@@ -165,6 +159,9 @@ a {
     letter-spacing: 0px;
     text-align: center;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .indexpagenav ul {
@@ -174,7 +171,7 @@ a {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    max-width: 940px;
     height: 60px;
     text-decoration: none;
     list-style-type: none;
@@ -184,8 +181,7 @@ a {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0px;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -198,7 +194,7 @@ a {
 }
 
 .services_and_adversting {
-    width: 940px;
+    max-width: 940px;
     height: 409px;
     background-color: white;
     border: lightgray solid 1px;
@@ -277,21 +273,8 @@ a {
     justify-content: space-between;
 }
 
-.item_presentation-h {
-    margin-left: 28px;
-    margin-right: 466px;
-    width: 300px;
-    height: 30px;
-}
-
-.item_presentation-button {
-    margin-top: auto;
-    margin-left: 734px;
-    margin-bottom: 26px;
-}
-
 .item_presetation button {
-    display: inline-block;
+    text-decoration: none;
     width: 192px;
     height: 38px;
     background-color: #EE3643;
@@ -299,15 +282,13 @@ a {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0px;
-    text-align: center;
-    border: none;
     text-transform: uppercase;
-    text-decoration: none;
+    border: none;
+    margin-left: 442px;
 }
 
 .item_presentation-header {
-    padding: 0px;
+    display: flex;
     margin-bottom: 20px;
     width: 940px;
     height: 89px;
@@ -316,10 +297,8 @@ a {
     font-size: 30px;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0px;
-    text-align: left;
-    display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .item_container {
@@ -360,16 +339,12 @@ a {
     font-size: 30px;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0px;
-    text-align: left;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    align-items: center;
 }
 
 .developers_header button {
     text-decoration: none;
-    display: inline-block;
     width: 192px;
     height: 38px;
     background-color: #EE3643;
@@ -377,8 +352,8 @@ a {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0px;
-    text-align: center;
+    border: none;
+    margin-left: 339px;
 }
 
 .developers_logos {
