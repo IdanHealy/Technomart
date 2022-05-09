@@ -1,3 +1,11 @@
+:root {
+    --back1-color: #293449;
+    --back2-color: #F1F5F7;
+    --back3-color: #32425C;
+    --buttoncolor-color: rgba(255, 255, 255, 0.3);
+    --headersmain-color: #F9F5F0;
+}
+
 button a {
     text-decoration: none;
 }
@@ -9,13 +17,13 @@ button {
 .header_content {
     max-width: auto;
     height: 320px;
-    background-color: #F1F5F7;
+    background-color: var(--back2-color);
 }
 
 .header_wrapper {
     max-width: auto;
     height: 42px;
-    background-color: #293449;
+    background-color: var(--back1-color);
     margin-bottom: 46px;
     display: flex;
     align-items: center;
@@ -86,7 +94,7 @@ button {
     height: 320px;
     display: block;
     height: 273px;
-    background-color: #F1F5F7;
+    background-color: var(--back2-color);
     margin-bottom: 59px;
 }
 
@@ -199,7 +207,7 @@ nav {
     text-decoration: none;
     list-style-type: none;
     color: white;
-    background-color: #32425C;
+    background-color: var(--back3-color);
     font-family: Cuprum;
     font-size: 18px;
     font-weight: 400;
@@ -320,7 +328,7 @@ nav {
     text-align: center;
     width: 135px;
     height: 38px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--buttoncolor-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,7 +397,7 @@ nav {
     line-height: 18px;
     text-transform: uppercase;
     border: none;
-    margin-left: 442px;
+    margin-left: 414px;
     color: white;
 }
 
@@ -398,7 +406,7 @@ nav {
     margin-bottom: 20px;
     width: 940px;
     height: 89px;
-    background-color: #F9F5F0;
+    background-color: var(--headersmain-color);
     font-family: Cuprum;
     font-size: 30px;
     font-weight: 400;
@@ -409,6 +417,10 @@ nav {
 
 .item_presentation-header a {
     color: white;
+}
+
+.item_presentation-header p {
+    margin-left: 28px;
 }
 
 .item_container {
@@ -444,7 +456,7 @@ nav {
 .developers_header {
     width: 940px;
     height: 89px;
-    background-color: #F9F5F0;
+    background-color: var(--headersmain-color);
     font-family: Cuprum;
     font-size: 30px;
     font-weight: 400;
@@ -452,6 +464,10 @@ nav {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.developers_header p {
+    margin-left: 28px;
 }
 
 .developers_header a {
@@ -468,8 +484,8 @@ nav {
     font-weight: 400;
     line-height: 18px;
     border: none;
-    margin-left: 339px;
     color: white;
+    margin-left: 311px;
 }
 
 .developers_logos {
@@ -499,6 +515,7 @@ nav {
 }
 
 .contacts_and_map {
+    padding: 0px;
     width: 940px;
     height: 356px;
     margin-left: auto;
@@ -531,6 +548,7 @@ nav {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
+    padding: 0px;
 }
 
 .technomart_company {
@@ -600,30 +618,35 @@ nav {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #32425C;
+    background-color: var(--back3-color);
 }
 
 .logo_footer {
     margin-right: 134px;
+    padding: 0px;
 }
 
 .footer_navigation ul {
     margin-top: 37px;
     width: 546px;
     height: 24px;
-    padding: 0%;
+    padding-left: 0px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     list-style-type: none;
     color: #F1F5F7;
-    background-color: #32425C;
+    background-color: var(--back3-color);
     font-family: Cuprum;
     font-size: 18px;
     font-weight: 400;
     justify-content: space-between;
     text-align: right;
+}
+
+.footer_navigation li {
+    padding-left: 0px;
 }
 
 .footer_content_first {
@@ -636,7 +659,7 @@ nav {
 }
 
 .footer_navigation a {
-    color: #F1F5F7;
+    color: var(--back2-color);
     text-decoration: none;
 }
 
@@ -667,7 +690,7 @@ nav {
     text-decoration: none;
     list-style-type: none;
     color: #F1F5F7;
-    background-color: #32425C;
+    background-color: var(--back3-color);
     font-family: Cuprum;
     font-size: 18px;
     font-weight: 400;
@@ -681,7 +704,7 @@ nav {
 }
 
 .footer_third_content {
-    background-color: #293449;
+    background-color: var(--back1-color);
     font-family: Cuprum;
     font-size: 16px;
     font-weight: 400;
@@ -704,7 +727,7 @@ nav {
 .footer_third_content_wripper {
     width: 100%;
     height: 107px;
-    background-color: #293449;
+    background-color: var(--back1-color);
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
