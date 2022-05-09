@@ -39,17 +39,6 @@ button {
 .MainPageLogo {
     width: 220px;
     height: 47px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://github.com/IdanHealy/Technomart-Project-for-HTMLAcademy/blob/main/img/Logos/logo-technomart1.png);
-    background-repeat: none;
-}
-
-.MainPageLogo a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
 }
 
 .searchform input {
@@ -217,6 +206,11 @@ nav {
     justify-content: space-around;
     text-align: center;
     margin-bottom: 59px;
+}
+
+.indexpagenav a {
+    color: white;
+    text-decoration: none;
 }
 
 .main_content {
@@ -491,6 +485,17 @@ nav {
 
 .technomart_company a {
     color: white;
+}
+
+.technomart_company li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.technomart_company img {
+    margin-right: 12px;
 }
 
 .map {
