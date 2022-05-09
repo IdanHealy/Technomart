@@ -513,6 +513,113 @@ nav {
     height: 522px;
     background: #F1F5F7;
     margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.cdw_wrapper {
+    width: 940px;
+    height: 522px;
+}
+
+.cdw_first_block {
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+}
+
+.cdw_first_block h1 {
+    padding-top: 64px;
+    font-family: Cuprum;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 107px;
+    height: 30px;
+    margin: 0%;
+    text-transform: uppercase;
+}
+
+.cdw_first_block p {
+    font-family: PT sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 394px;
+    height: 49px;
+    margin: 0%;
+    padding-top: 25px;
+}
+
+.friendly_container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 283px;
+    width: 1070px;
+}
+
+.cdw_second_block {
+    height: 277px;
+    width: 240px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-right: black solid 1px;
+}
+
+.cdw_buttons {
+    width: 240px;
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+}
+
+.cdw_buttons button {
+    width: 240px;
+    height: 61px;
+    background-color: white;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    border: none;
+    color: var(--back3-color);
+}
+
+.cdw_third_block {
+    width: 629px;
+    height: 283px;
+    margin-left: 80px;
+    margin-top: 47px;
+    background-image: url(/Project_Technomart/Technomart-Project-for-HTMLAcademy/img/decorations/Delivery-machine.svg);
+    background-repeat: no-repeat;
+    background-position: 162px 22px;
+}
+
+.cdw_third_block h1 {
+    margin: 0%;
+    padding: 0%;
+    width: 305px;
+    height: 30px;
+    font-family: Cuprum;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.cdw_third_block p {
+    width: 300px;
+    height: 99px;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
 }
 
 .contacts_and_map {
