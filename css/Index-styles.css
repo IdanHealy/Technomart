@@ -130,7 +130,7 @@
     justify-content: center;
 }
 
-.number>div>a {
+.number:nth-child(2) {
     font-family: Cuprum;
     font-size: 21px;
     font-weight: 700;
@@ -442,7 +442,7 @@ nav {
     width: 141px;
     height: 38px;
     color: white;
-    background-color: black;
+    background-color: white;
     background-repeat: no-repeat;
     background-image: url(/Technomart-Project-for-HTMLAcademy/img/decorations/red-button.svg);
     background-repeat: no-repeat;
