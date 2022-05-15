@@ -430,11 +430,27 @@ nav {
     width: 220px;
     height: 318px;
     border: #eaeaea solid 1px;
-    font-family: PT Sans;
+    font-family: 'PT Sans';
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
     justify-content: space-around;
+}
+
+.item_container s {
+    display: flex;
+    color: #A9A9A9;
+    font-family: 'PT Sans';
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.item_container p {
+    font-family: 'PT Sans';
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
 }
 
 .new_price {
@@ -450,7 +466,7 @@ nav {
 
 .new_price a {
     display: flex;
-    font-family: PT Sans;
+    font-family: 'PT Sans';
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
@@ -857,4 +873,125 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/*catalog-styles*/
+
+:root {
+    --back1-color: #293449;
+    --back2-color: #F1F5F7;
+    --back3-color: #32425C;
+    --headersmain-color: #F9F5F0;
+}
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: auto 940px auto;
+    grid-template-rows: 320px;
+    grid-template-areas: ". header ." ". catalog ." ". description ." ". footer .";
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 940px;
+    grid-template-rows: 42px 278px;
+    background-color: var(--back2-color);
+    grid-template-areas: "menu" "contacts";
+}
+
+.menu {
+    background-color: var(--back3-color);
+    display: flex;
+    grid-area: menu;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.contacts {
+    background-color: var(--back2-color);
+    display: grid;
+    grid-area: contacts;
+}
+
+.MainPageLogo {
+    width: 220px;
+    height: 47px;
+}
+
+.searchform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.searchform input {
+    background-color: var(--back3-color);
+    border: none;
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: white;
+    display: flex;
+}
+
+.searchform placeholder {
+    display: flex;
+    color: white;
+}
+
+.bookmarks_link {
+    width: 149px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.basket_link {
+    width: 150px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EE3643;
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
+
+.ordening_link {
+    width: 150px;
+    height: 42px;
+    background-color: #63A63E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
+
+.catalog-wrapper {
+    display: grid;
+    grid-template-columns: auto 940px auto;
+    grid-template-rows: 320px;
+    grid-template-rows: 1369px;
 }
