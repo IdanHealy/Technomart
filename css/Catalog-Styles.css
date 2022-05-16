@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 320px 21px 1289px 59px 261px 300px;
+    grid-template-areas: "header_grid" "." "catalog" "." "aside" "footer";
+}
+
+.header_grid {
+    display: grid;
+    grid-area: header_grid;
+    width: 100%;
+    height: 320px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 42px auto;
+    grid-template-areas: "menu-wrapper" "information-wrapper";
+}
+
+
+/*menu in header*/
+
+.menu_wrapper {
+    display: grid;
+    width: 1fr;
+    height: 42px;
+    grid-area: menu-wrapper;
+    background-color: #293449;
+    grid-template-columns: 1fr 940px 1fr;
+    grid-template-areas: ". header-menu .";
+}
+
+.header_menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    grid-area: header-menu;
+    z-index: 1;
+}
+
+.header_menu-logotype {
+    width: 220px;
+    height: 47px;
+    background-color: #EE3643;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.header_menu-search {
+    display: flex;
+    width: 290px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_menu-search input {
+    background-color: #293449;
+    border: none;
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+
+.header_menu-bookmarks {
+    width: 130px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_menu-bookmarks a {
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_menu-basket {
+    width: 150px;
+    height: 42px;
+    background-color: #EE3643;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_menu-basket a {
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_menu-order {
+    width: 150px;
+    height: 42px;
+    background-color: #63A63E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_menu-order a {
+    font-family: 'Cuprum';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*menu in header*/
+
+
+/***/
+
+
+/*information in header*/
+
+.information_wrapper {
+    display: grid;
+    width: 1fr;
+    height: auto;
+    grid-area: information-wrapper;
+    background-color: #F1F5F7;
+    grid-template-columns: 1fr 940px 1fr;
+    grid-template-areas: ". header_information .";
+}
+
+.header_information {
+    display: grid;
+    width: 940px;
+    height: auto;
+    background-color: #F1F5F7;
+    grid-area: header_information;
+    grid-template-rows: auto 60px 60px;
+    grid-template-areas: "header_information-content" "header_information-navigation" ".";
+}
+
+.header_information-container {
+    width: 940px;
+    height: auto;
+    grid-area: header_information-content;
+    display: grid;
+    grid-template-columns: auto 197px 93px 270px 51px 299px;
+    grid-template-rows: auto;
+    grid-template-areas: ". description . number_and_adress . client_info";
+}
+
+.header_information-description {
+    grid-area: description;
+    width: 197px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cuprum;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+    color: #EE3643;
+}
+
+.number_and_adress {
+    grid-area: number_and_adress;
+    display: grid;
+    grid-template-rows: 46px 45px 10px 24px auto;
+    grid-template-areas: "." "number" "." "adress" ".";
+}
+
+.number_and_adress div {
+    width: 265px;
+    height: 45px;
+    border: white solid 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: number;
+    margin: 0px;
+}
+
+.number_and_adress a {
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #EE3643;
+    margin: 0px;
+}
+
+.number_and_adress p {
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    grid-area: adress;
+    text-align: center;
+}
+
+.personal_area_links {
+    grid-area: client_info;
+    width: 299px;
+    display: grid;
+    grid-template-rows: 48px 43px 7px 18px 42px;
+    grid-template-areas: "." "name" "." "links" ".";
+}
+
+.name_link {
+    width: 299px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: name;
+}
+
+.name_link a {
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    color: black;
+}
+
+.order_and_personal_area_link {
+    grid-area: links;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.order_and_personal_area_link a {
+    font-family: Cuprum;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    color: #32425C;
+}
+
+.header_information-navigation {
+    grid-area: header_information-navigation;
+}
+
+.header_information-navigation ul {
+    height: 60px;
+    background-color: #293449;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.navigation_links a {
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+
+
+/*information in header*/
