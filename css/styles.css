@@ -369,10 +369,11 @@
 }
 
 
-/*//////////////////////////////information in header-end//////////////////////////////*/
+/*information in header-end*/
 
+/**/
 
-/**************************************************************************************************/
+/*main content in index page-start*/
 
 .main_content {
     margin-top: 59px;
@@ -692,6 +693,76 @@
     align-items: center;
     margin-bottom: 20px;
 }
+
+/*main content in index page-end*/
+
+/*main content in catalog page-start*/
+.catalog-main-grid{
+grid-area: catalog;
+display: grid;
+grid-template-columns: 1fr 940px 1fr;
+grid-template-areas: " . catalog_container . ";
+}
+
+.catalog_container{
+grid-area: catalog_container;
+width: 940px;
+display: grid;
+grid-template-rows: 18px 20px 89px 20px 1104px 48px 38px;
+grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" "." "items_nav";
+}
+
+.catalog_navigation{
+    grid-area: catalog_navigation;
+    width: 463.16px;
+    height: 18px;
+}
+
+.catalog_navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    font-family: 'PT Sans';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.catalog_h2{
+    width: 940px;
+    height: 89px;
+    grid-area: header;
+    font-family: Cuprum;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #32425C;
+    text-transform: uppercase;
+    background-color: #F1F5F7;    
+}
+
+.catalog_h2 h2{
+    padding-left: 29px;
+    padding-top: 29px;
+    margin: 0;
+}
+
+.filters_and_items{
+grid-area: filters_and_items;
+width: 940px;
+height: 1014px;
+display: grid;
+}
+
+
+
+
+
+/*main content in catalog page-end*/
 
 .credit_delivery_warranty {
     width: 100%;
@@ -1026,4 +1097,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.catalog-footer{
+grid-area: footer;
 }
