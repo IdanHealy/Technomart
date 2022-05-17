@@ -708,7 +708,7 @@ grid-template-areas: " . catalog_container . ";
 grid-area: catalog_container;
 width: 940px;
 display: grid;
-grid-template-rows: 18px 20px 89px 20px 1104px 48px 38px;
+grid-template-rows: 18px 20px 89px 20px 1289px 48px 38px;
 grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" "." "items_nav";
 }
 
@@ -753,11 +753,25 @@ grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" "
 
 .filters_and_items{
 grid-area: filters_and_items;
+display: grid;
+grid-template-columns: 220px 20px 700px;
+grid-template-areas: "filters . items";
 width: 940px;
-height: 1014px;
+height: 1056px;
 display: grid;
 }
 
+.filters{
+grid-area: filters;
+width: 220px;
+height: 720px;
+}
+
+.items_catalog{
+grid-area: items;
+width: 700px;
+height: 1056;
+}
 
 
 
