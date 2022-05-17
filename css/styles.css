@@ -214,7 +214,7 @@
 .number_and_adress div {
     width: 265px;
     height: 45px;
-    border: white solid 5px;
+    border: white solid 3px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -225,7 +225,7 @@
 
 .number_and_adress a {
     font-family: Cuprum;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 30px;
     color: #EE3643;
@@ -322,6 +322,7 @@
     font-weight: 400;
     line-height: 21px;
     color: black;
+    
 }
 
 .order_and_personal_area_link {
@@ -329,10 +330,10 @@
     grid-area: links;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.order_and_personal_area_link a {
+.order_and_personal_area_link a:nth-of-type(1) {
     /*in catalog*/
     font-family: Cuprum;
     font-size: 16px;
@@ -340,7 +341,30 @@
     line-height: 18px;
     text-decoration: none;
     color: #32425C;
+    text-align: right;
 }
+
+.order_and_personal_area_link a:nth-of-type(2) {
+    /*in catalog*/
+    font-family: Cuprum;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    color: #32425C;
+    text-align: left;
+}
+
+.point a{
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    
+}
+
 
 .header_information-navigation {
     grid-area: header_information-navigation;
@@ -698,18 +722,18 @@
 
 /*main content in catalog page-start*/
 .catalog-main-grid{
-grid-area: catalog;
-display: grid;
-grid-template-columns: 1fr 940px 1fr;
-grid-template-areas: " . catalog_container . ";
+    grid-area: catalog;
+    display: grid;
+    grid-template-columns: 1fr 940px 1fr;
+    grid-template-areas: " . catalog_container . ";
 }
 
 .catalog_container{
-grid-area: catalog_container;
-width: 940px;
-display: grid;
-grid-template-rows: 18px 20px 89px 20px 1289px 48px 38px;
-grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" "." "items_nav";
+    grid-area: catalog_container;
+    width: 940px;
+    display: grid;
+    grid-template-rows: 18px 20px 89px 20px 1289px 48px 38px;
+    grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" "." "items_nav";
 }
 
 .catalog_navigation{
@@ -752,29 +776,139 @@ grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" "
 }
 
 .filters_and_items{
-grid-area: filters_and_items;
-display: grid;
-grid-template-columns: 220px 20px 700px;
-grid-template-areas: "filters . items";
-width: 940px;
-height: 1056px;
-display: grid;
+    grid-area: filters_and_items;
+    display: grid;
+    grid-template-columns: 220px 20px 700px;
+    grid-template-areas: "filters . items";
+    width: 940px;
+    height: 1056px;
+    display: grid;
 }
 
 .filters{
-grid-area: filters;
-width: 220px;
-height: 720px;
+    grid-area: filters;
+    width: 220px;
+    height: 720px;
 }
 
 .items_catalog{
-grid-area: items;
-width: 700px;
-height: 1056;
+    grid-area: items;
+    width: 700px;
+    height: 1056;
+    display: grid;
+    grid-template-rows: 38px 28px 990px;
+    grid-template-areas: 
+        "sorting" "." "items_bar";
 }
 
+.sorting{
+    grid-area: sorting;
+    width: 700px;
+    height: 38px;
+    background-color: #F7F3EC;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 
 
+}
+
+.sorting p{
+    padding: 0;
+    width: 81px;
+    height: 18px;
+    padding-left: 19px;
+    padding-right: 140px;
+    font-family: 'PT Sans';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+
+}
+
+.sorting ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-content: center;
+}
+
+.sorting li:nth-of-type(1){
+    width: 53px;
+    height: 18px;
+    color:#EE3643;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-right: 70px;
+    }
+
+.sorting li:nth-of-type(2){
+    width: 53px;    
+    height: 18px;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-right: 65px;
+    }
+
+.sorting li:nth-of-type(2):hover{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: red;
+}
+
+.sorting li:nth-of-type(3){
+    width: 113px;
+    height: 18px;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-right: 46px;
+}
+
+.sorting li:nth-of-type(3):hover{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: red;
+}
+
+.sorting button{
+    border: none;
+    background-color: transparent;
+}
+
+.items_bar{
+    width: 700px;
+    grid-area: items_bar;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+.items_bar div{
+    width: 219px;
+    height: 317px;
+    border: 1px solid lightgrey;
+    margin-bottom: 18px;
+}
+
+}
+
+.items_bar div:hover{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
 
 /*main content in catalog page-end*/
 
@@ -994,12 +1128,17 @@ height: 1056;
 }
 
 .mainpagefooter {
-    height: 193px;
+    height: 300px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--back3-color);
 }
+
+.catalog-footer {
+    height: 300px;
+    grid-area: footer;}
+
 
 .logo_footer {
     margin-right: 134px;
@@ -1031,6 +1170,7 @@ height: 1056;
 
 .footer_content_first {
     width: 940px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -1051,6 +1191,7 @@ height: 1056;
     letter-spacing: 0px;
     text-align: left;
     width: 940px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -1105,6 +1246,7 @@ height: 1056;
 }
 
 .footer_third_content_wripper {
+    margin-top: 30px;
     width: 100%;
     height: 107px;
     background-color: var(--back1-color);
@@ -1113,6 +1255,5 @@ height: 1056;
     align-items: center;
 }
 
-.catalog-footer{
-grid-area: footer;
+
 }
