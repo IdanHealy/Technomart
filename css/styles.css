@@ -1,9 +1,25 @@
 :root {
-    --back1-color: #293449;
-    --back2-color: #F1F5F7;
-    --back3-color: #32425C;
-    --buttoncolor-color: rgba(255, 255, 255, 0.3);
-    --headersmain-color: #F9F5F0;
+    --back1-color:              #293449;
+    --back2-color:              #F1F5F7;
+    --back3-color:              #32425C;
+    --buttoncolor-color:        rgba(255, 255, 255, 0.3);
+    --headersmain-color:        #F9F5F0;
+    --basic-red-color:          #EE3643;
+    --basic-green-color:        #63A63E;
+    --basic-grey-color:         #3D546F;
+    --basic-greylight-color:    #C5C5C5;
+    --basic-background-color:   #F1F5F7;
+    --white-color:              #FFFFFF;
+    --special-yellow-color:     #FFBF47;
+    --special-blue-color:       #3BBCE3;
+    --special-lilac-color:      #DC91D8;
+    --special-greenlight-color: #8ED78F;
+    --special-yellowlight-color:#FFD180;
+    --success-color:            #5FBB2D;
+    --warning-color:            #FFBF47;
+    --error-color:              #BA2732;
+    --lightgrey-color:          #EAEAEA;
+    
 }
 
 @font-face {
@@ -324,6 +340,14 @@
     color: black;
 }
 
+.enter_link a:hover{
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--basic-red-color);}
+
 .registration_link {
     /*in mainpage*/
     width: 150px;
@@ -345,6 +369,14 @@
     color: black;
 }
 
+.registration_link a:hover{
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--basic-red-color);}
+
 .name_link {
     /*in catalog*/
     width: 299px;
@@ -365,6 +397,8 @@
     line-height: 21px;
     color: black;
 }
+
+
 
 .order_and_personal_area_link {
     /*in catalog*/
@@ -410,17 +444,20 @@
 }
 
 .header_information-navigation ul {
+    display: grid;
+    grid-template-columns: 122px 122px 122px 122px 170px 122px 122px; 
     height: 60px;
-    background-color: #293449;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: var(--back3-color);
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
 }
+
+
+
 
 .navigation_links a {
     text-decoration: none;
@@ -431,6 +468,28 @@
     color: #fff;
 }
 
+.navigation_links li:hover{
+    background-color: var(--back1-color);
+    height: 60px;
+    width: 122px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    text-align: center;
+    align-items: center;
+
+}
+
+.navigation_links li:nth-last-of-type(3):hover{
+    background-color: var(--back1-color);
+    height: 60px;
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
 
 /*information in header-end*/
 
@@ -440,7 +499,7 @@
 
 /*main content in index page-start*/
 
-.main_content {
+.main_content: {
     margin-top: 59px;
     display: block;
 }
@@ -742,6 +801,9 @@
     align-items: center;
     margin-bottom: 20px;
 }
+
+.developers_logos_card:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);}
 
 
 /*main content in index page-end*/
@@ -1081,13 +1143,13 @@
     display: flex;
     flex-direction: column;
     margin: 0%;
-    padding: 0%;
+    padding: 0%;;
 }
 
 .cdw_buttons button {
     width: 240px;
     height: 61px;
-    background-color: white;
+    background-color: var(--back3-color);
     font-family: Cuprum;
     font-size: 21px;
     font-weight: 700;
@@ -1095,7 +1157,22 @@
     letter-spacing: 0px;
     text-align: center;
     border: none;
-    color: var(--back3-color);
+    color: white;
+}
+
+.cdw_buttons button:nth-of-type(1){
+        width: 240px;
+        height: 61px;
+        background-color: white;
+        font-family: Cuprum;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: center;
+        border: none;
+        color: var(--back3-color);
+ 
 }
 
 .cdw_third_block {
