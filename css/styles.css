@@ -584,7 +584,7 @@
     margin-bottom: 20px;
     width: 940px;
     height: 89px;
-    background-color: var();
+    background-color: #F9F5F0;
     font-family: Cuprum;
     font-size: 30px;
     font-weight: 400;
@@ -595,6 +595,7 @@
 
 .item_presentation-header a {
     color: white;
+    text-decoration: none;
 }
 
 .item_presentation-header p {
@@ -605,14 +606,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 220px;
-    height: 318px;
-    border: #eaeaea solid 1px;
+    width: 219px;
+    height: 317px;
     font-family: 'PT Sans';
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
     justify-content: space-around;
+    border: 1px solid lightgrey;
+    margin-bottom: 18px;
+}
+
+.item_container:hover{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .item_container s {
@@ -631,28 +637,7 @@
     line-height: 18px;
 }
 
-.new_price {
-    display: block;
-    width: 141px;
-    height: 38px;
-    color: white;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-image: url(/Technomart-Project-for-HTMLAcademy/img/decorations/red-button.svg);
-    background-repeat: no-repeat;
-}
 
-.new_price a {
-    display: flex;
-    font-family: 'PT Sans';
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 18px;
-    width: 141px;
-    height: 38px;
-    align-items: center;
-    justify-content: center;
-}
 
 .developers {
     margin-bottom: 70px;
@@ -684,7 +669,8 @@
 }
 
 .developers_header a {
-    color: white
+    color: white;
+    text-decoration: none;
 }
 
 .developers_header button {
@@ -789,6 +775,32 @@
     grid-area: filters;
     width: 220px;
     height: 720px;
+    display: grid;
+    grid-template-columns: 220px;
+    grid-template-rows: 38px 14.5px 195px 265px 169px 38px;
+    grid-template-areas: "filters-header"
+                        "."
+                        "price_filter"
+                        "developers_filter"
+                        "energy_filter"
+                        "button_accept_filters"
+}
+
+.filters_header{
+    width: 220px;
+    height: 38px;
+    background-color: #F7F3EC;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.filters_header p{
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 18px;
 }
 
 .items_catalog{
@@ -897,18 +909,6 @@
     justify-content: space-between;
     }
 
-.items_bar div{
-    width: 219px;
-    height: 317px;
-    border: 1px solid lightgrey;
-    margin-bottom: 18px;
-}
-
-}
-
-.items_bar div:hover{
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-}
 
 /*main content in catalog page-end*/
 
@@ -1126,6 +1126,56 @@
     background-color: #EE3643;
     border: none;
 }
+/*aside*/
+
+.catalog_aside{
+    grid-area: aside;
+    width: 1fr;
+    height:  261px;
+    background-color: var(--back2-color);
+    display: grid;
+    grid-template-columns: 25vw 1fr 25vw;
+    grid-template-rows: 64px 30px 25px 74px 68px;
+    grid-template-areas: ". . ."
+                        " . aside-h3 . "
+                        " . . ."
+                        ". aside-p ."
+                        " . . ."
+                        ". . .";
+}
+
+.aside-h3{
+    grid-area: aside-h3;
+    width: 338px;
+    height: 30px;
+    margin: 0px;
+}
+
+.aside-h3 h3{
+    margin: 0px;
+    font-family: Cuprum;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+
+.aside-p{
+    grid-area: aside-p;
+    width: 907px;
+    height: 74px;
+}
+
+.aside-p p{
+    font-family: 'pT Sans';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    text-transform: none;
+}
+/*aside*/
 
 .mainpagefooter {
     height: 300px;
