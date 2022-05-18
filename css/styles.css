@@ -1,25 +1,24 @@
 :root {
-    --back1-color:              #293449;
-    --back2-color:              #F1F5F7;
-    --back3-color:              #32425C;
-    --buttoncolor-color:        rgba(255, 255, 255, 0.3);
-    --headersmain-color:        #F9F5F0;
-    --basic-red-color:          #EE3643;
-    --basic-green-color:        #63A63E;
-    --basic-grey-color:         #3D546F;
-    --basic-greylight-color:    #C5C5C5;
-    --basic-background-color:   #F1F5F7;
-    --white-color:              #FFFFFF;
-    --special-yellow-color:     #FFBF47;
-    --special-blue-color:       #3BBCE3;
-    --special-lilac-color:      #DC91D8;
+    --back1-color: #293449;
+    --back2-color: #F1F5F7;
+    --back3-color: #32425C;
+    --buttoncolor-color: rgba(255, 255, 255, 0.3);
+    --headersmain-color: #F9F5F0;
+    --basic-red-color: #EE3643;
+    --basic-green-color: #63A63E;
+    --basic-grey-color: #3D546F;
+    --basic-greylight-color: #C5C5C5;
+    --basic-background-color: #F1F5F7;
+    --white-color: #FFFFFF;
+    --special-yellow-color: #FFBF47;
+    --special-blue-color: #3BBCE3;
+    --special-lilac-color: #DC91D8;
     --special-greenlight-color: #8ED78F;
-    --special-yellowlight-color:#FFD180;
-    --success-color:            #5FBB2D;
-    --warning-color:            #FFBF47;
-    --error-color:              #BA2732;
-    --lightgrey-color:          #EAEAEA;
-    
+    --special-yellowlight-color: #FFD180;
+    --success-color: #5FBB2D;
+    --warning-color: #FFBF47;
+    --error-color: #BA2732;
+    --lightgrey-color: #EAEAEA;
 }
 
 @font-face {
@@ -113,6 +112,20 @@
     width: 220px;
     height: 47px;
     background-color: #EE3643;
+    background-image: url(../img/decorations/Logo-wallpaper.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.header_menu-logotype:active {
+    width: 220px;
+    height: 47px;
+    background-color: #EE3643;
+    background-image: url(../img/decorations/Logo-wallpaper-after-click.svg);
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,13 +353,23 @@
     color: black;
 }
 
-.enter_link a:hover{
+.enter_link a:hover {
     text-decoration: none;
     font-family: Cuprum;
     font-size: 21px;
     font-weight: 400;
     line-height: 21px;
-    color: var(--basic-red-color);}
+    color: var(--basic-red-color);
+}
+
+.enter_link a:active {
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--basic-greylight-color);
+}
 
 .registration_link {
     /*in mainpage*/
@@ -369,13 +392,23 @@
     color: black;
 }
 
-.registration_link a:hover{
+.registration_link a:hover {
     text-decoration: none;
     font-family: Cuprum;
     font-size: 21px;
     font-weight: 400;
     line-height: 21px;
-    color: var(--basic-red-color);}
+    color: var(--basic-red-color);
+}
+
+.registration_link a:active {
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--basic-greylight-color);
+}
 
 .name_link {
     /*in catalog*/
@@ -397,8 +430,6 @@
     line-height: 21px;
     color: black;
 }
-
-
 
 .order_and_personal_area_link {
     /*in catalog*/
@@ -445,7 +476,7 @@
 
 .header_information-navigation ul {
     display: grid;
-    grid-template-columns: 122px 122px 122px 122px 170px 122px 122px; 
+    grid-template-columns: 122px 122px 122px 122px 170px 122px 122px;
     height: 60px;
     background-color: var(--back3-color);
     list-style-type: none;
@@ -456,9 +487,6 @@
     padding: 0px;
 }
 
-
-
-
 .navigation_links a {
     text-decoration: none;
     font-family: Cuprum;
@@ -468,7 +496,11 @@
     color: #fff;
 }
 
-.navigation_links li:hover{
+.navigation_links a:active {
+    color: var(--basic-greylight-color)
+}
+
+.navigation_links li:hover {
     background-color: var(--back1-color);
     height: 60px;
     width: 122px;
@@ -477,10 +509,9 @@
     display: grid;
     text-align: center;
     align-items: center;
-
 }
 
-.navigation_links li:nth-last-of-type(3):hover{
+.navigation_links li:nth-last-of-type(3):hover {
     background-color: var(--back1-color);
     height: 60px;
     width: 170px;
@@ -490,6 +521,18 @@
     text-align: center;
     align-items: center;
 }
+
+.navigation_links li:active {
+    background-color: var(--back1-color);
+    height: 60px;
+    width: 122px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
 
 /*information in header-end*/
 
@@ -803,7 +846,8 @@
 }
 
 .developers_logos_card:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
 
 
 /*main content in index page-end*/
@@ -1143,7 +1187,8 @@
     display: flex;
     flex-direction: column;
     margin: 0%;
-    padding: 0%;;
+    padding: 0%;
+    ;
 }
 
 .cdw_buttons button {
@@ -1160,19 +1205,18 @@
     color: white;
 }
 
-.cdw_buttons button:nth-of-type(1){
-        width: 240px;
-        height: 61px;
-        background-color: white;
-        font-family: Cuprum;
-        font-size: 21px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0px;
-        text-align: center;
-        border: none;
-        color: var(--back3-color);
- 
+.cdw_buttons button:nth-of-type(1) {
+    width: 240px;
+    height: 61px;
+    background-color: white;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    border: none;
+    color: var(--back3-color);
 }
 
 .cdw_third_block {
