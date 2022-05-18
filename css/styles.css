@@ -6,6 +6,48 @@
     --headersmain-color: #F9F5F0;
 }
 
+@font-face {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cuprum'), url(../fonts/cuprum.woff2) format("woff2"), url(../fonts/cuprum.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Cuprumbold';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Cuprumbold'), url(../fonts/cuprumbold.woff2) format("woff2"), url(../fonts/cuprumbold.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Cuprumbolditalic';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Cuprumbolditalic'), url(../fonts/cuprumbolditalic.woff2) format("woff2"), url(../fonts/cuprumbolditalic.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Cuprumitalic';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Cuprumitalic'), url(../fonts/cuprumitalic.woff2) format("woff2"), url(../fonts/cuprumitalic.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'ptsans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ptsans'), url(../fonts/ptsans.woff2) format("woff2"), url(../fonts/ptsans.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'ptsansbold';
+    font-style: normal;
+    font-weight: bold;
+    src: local('ptsansbold'), url(../fonts/ptsansbold.woff2) format("woff2"), url(../fonts/ptsansbold.woff) format("woff");
+}
+
 .index_body {
     margin: 0;
     padding: 0;
@@ -548,7 +590,7 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0px;
-    background-image: url(/Technomart-Project-for-HTMLAcademy/img/content/perforators-first-image.jpg);
+    background-image: url(/img/content/perforators-first-image.jpg);
     background-color: lightblue;
 }
 
