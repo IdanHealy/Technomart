@@ -79,6 +79,63 @@
                     <div class="filters_header">
                         <p>фильтр:</p>
                     </div>
+                    <div class="noname_div">
+                        <div>цена:</div>
+                        <form action="form.php" method="GET">
+                            <div>
+                                <div>
+
+                                    <div>
+                                        <label><input name="min-price" type="text" value="0"></label>
+                                        <label><input name="max-price" type="text" value="30000"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div>производители:</div>
+                        <form action="form.php" method="GET">
+                            <div>
+                                <div>
+                                    <input id="check1" type="checkbox" name="makers" value="">
+                                    <label for="check1">Bosh</label>
+                                </div>
+                                <div>
+                                    <input id="check2" type="checkbox" name="makers" value="">
+                                    <label for="check2">Интерскол</label>
+                                </div>
+                                <div>
+                                    <input id="check3" type="checkbox" name="makers" value="">
+                                    <label for="check3">Makita</label>
+                                </div>
+                                <div>
+                                    <input id="check4" type="checkbox" name="makers" value="">
+                                    <label for="check4">Dewalt</label>
+                                </div>
+                                <div>
+                                    <input id="check5" type="checkbox" name="makers" value="">
+                                    <label for="check5">Hitachi</label>
+                                </div>
+                            </div>
+                        </form>
+                        <div>Питание:</div>
+                        <form action="form.php" method="GET"></form>
+                        <div>
+                            <div>
+                                <input id="akum" type="radio" name="radio" value="akum">
+                                <label for="akum">аккумуляторные</label>
+                            </div>
+                            <div>
+                                <input id="net" type="radio" name="radio" value="akum">
+                                <label for="net">сетевые</label>
+                            </div>
+                            <h2>Сортировка</h2>
+                            <ul>
+                                <li>По цене</li>
+                                <li>По типу</li>
+                                <li>По функционалу</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="items_catalog">
                     <div class="sorting">
@@ -147,7 +204,14 @@
                             <a>12500 р.</a>
                         </div>
                     </div>
+                    <div class="items_nav">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>следующая</button>
+                    </div>
                 </div>
+
             </div>
         </div>
     </main>

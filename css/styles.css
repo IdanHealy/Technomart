@@ -761,7 +761,7 @@
     width: 940px;
     display: grid;
     grid-template-rows: 18px 20px 89px 20px 1289px 48px 38px;
-    grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" "." "items_nav";
+    grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" ".";
 }
 
 .catalog_navigation {
@@ -823,6 +823,12 @@
     grid-template-areas: "filters-header" "." "price_filter" "developers_filter" "energy_filter" "button_accept_filters";
 }
 
+.noname_div {
+    grid-area: price_filter;
+    display: flex;
+    flex-direction: column;
+}
+
 .filters_header {
     width: 220px;
     height: 38px;
@@ -845,8 +851,8 @@
     width: 700px;
     height: 1056;
     display: grid;
-    grid-template-rows: 38px 28px 990px;
-    grid-template-areas: "sorting" "." "items_bar";
+    grid-template-rows: 38px 28px 995px 48px 38px;
+    grid-template-areas: "sorting" "." "items_bar" "." "items_nav";
 }
 
 .sorting {
@@ -942,6 +948,68 @@
     justify-content: space-between;
 }
 
+.items_nav {
+    width: 300px;
+    height: 38px;
+    grid-area: items_nav;
+}
+
+.items_nav button:nth-child(1) {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 2px;
+    margin-right: 10px;
+    background-color: #EE3643;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+}
+
+.items_nav button:nth-child(2) {
+    width: 38px;
+    height: 38px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    margin-right: 10px;
+    background-color: #fff;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: black;
+}
+
+.items_nav button:nth-child(3) {
+    height: 38px;
+    width: 38px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    margin-right: 10px;
+    background-color: #fff;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: black;
+}
+
+.items_nav button:nth-child(4) {
+    height: 38px;
+    width: 140px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    background-color: #fff;
+    font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: black;
+    text-transform: uppercase;
+}
+
 
 /*main content in catalog page-end*/
 
@@ -1035,7 +1103,7 @@
     height: 283px;
     margin-left: 80px;
     margin-top: 47px;
-    background-image: url(/Technomart-Project-for-HTMLAcademy/img/decorations/Delivery-machine.svg);
+    background-image: url(/Technomart-Project-for-HTMLAcademy/img/content/perforators-first-image.jpg);
     background-repeat: no-repeat;
     background-position: 162px 22px;
 }
@@ -1129,7 +1197,6 @@
 }
 
 .contacts_button {
-    text-decoration: none;
     text-transform: uppercase;
     color: white;
     font-family: Cuprum;
@@ -1142,8 +1209,14 @@
     border: none;
 }
 
+.contacts_button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .map a {
-    color: white;
+    text-decoration: none;
+    color: #fff;
 }
 
 .map_button {
