@@ -590,7 +590,7 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0px;
-    background-image: url(/Technomart-Project-for-HTMLAcademy/img/content/perforators-first-image.jpg);
+    background-image: url(../img/content/perforators-first-image.jpg);
     background-color: lightblue;
 }
 
@@ -1103,7 +1103,7 @@
     height: 283px;
     margin-left: 80px;
     margin-top: 47px;
-    background-image: url(/Technomart-Project-for-HTMLAcademy/img/decorations/Delivery-machine.svg);
+    background-image: url(../img/decorations/Delivery-machine.svg);
     background-repeat: no-repeat;
     background-position: 162px 22px;
 }
