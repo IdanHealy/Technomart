@@ -322,7 +322,6 @@
     font-weight: 400;
     line-height: 21px;
     color: black;
-    
 }
 
 .order_and_personal_area_link {
@@ -355,16 +354,14 @@
     text-align: left;
 }
 
-.point a{
+.point a {
     margin: 0;
     width: 18px;
     height: 18px;
     justify-content: center;
     align-content: center;
     display: flex;
-    
 }
-
 
 .header_information-navigation {
     grid-area: header_information-navigation;
@@ -395,7 +392,9 @@
 
 /*information in header-end*/
 
+
 /**/
+
 
 /*main content in index page-start*/
 
@@ -617,7 +616,7 @@
     margin-bottom: 18px;
 }
 
-.item_container:hover{
+.item_container:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -636,8 +635,6 @@
     font-weight: 700;
     line-height: 18px;
 }
-
-
 
 .developers {
     margin-bottom: 70px;
@@ -704,17 +701,20 @@
     margin-bottom: 20px;
 }
 
+
 /*main content in index page-end*/
 
+
 /*main content in catalog page-start*/
-.catalog-main-grid{
+
+.catalog-main-grid {
     grid-area: catalog;
     display: grid;
     grid-template-columns: 1fr 940px 1fr;
     grid-template-areas: " . catalog_container . ";
 }
 
-.catalog_container{
+.catalog_container {
     grid-area: catalog_container;
     width: 940px;
     display: grid;
@@ -722,13 +722,13 @@
     grid-template-areas: "catalog_navigation" "." "header" "." "filters_and_items" "." "items_nav";
 }
 
-.catalog_navigation{
+.catalog_navigation {
     grid-area: catalog_navigation;
     width: 463.16px;
     height: 18px;
 }
 
-.catalog_navigation ul{
+.catalog_navigation ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -742,7 +742,7 @@
     text-transform: uppercase;
 }
 
-.catalog_h2{
+.catalog_h2 {
     width: 940px;
     height: 89px;
     grid-area: header;
@@ -752,16 +752,16 @@
     line-height: 30px;
     color: #32425C;
     text-transform: uppercase;
-    background-color: #F1F5F7;    
+    background-color: #F1F5F7;
 }
 
-.catalog_h2 h2{
+.catalog_h2 h2 {
     padding-left: 29px;
     padding-top: 29px;
     margin: 0;
 }
 
-.filters_and_items{
+.filters_and_items {
     grid-area: filters_and_items;
     display: grid;
     grid-template-columns: 220px 20px 700px;
@@ -771,22 +771,17 @@
     display: grid;
 }
 
-.filters{
+.filters {
     grid-area: filters;
     width: 220px;
     height: 720px;
     display: grid;
     grid-template-columns: 220px;
     grid-template-rows: 38px 14.5px 195px 265px 169px 38px;
-    grid-template-areas: "filters-header"
-                        "."
-                        "price_filter"
-                        "developers_filter"
-                        "energy_filter"
-                        "button_accept_filters";
+    grid-template-areas: "filters-header" "." "price_filter" "developers_filter" "energy_filter" "button_accept_filters";
 }
 
-.filters_header{
+.filters_header {
     width: 220px;
     height: 38px;
     background-color: #F7F3EC;
@@ -797,23 +792,22 @@
     text-transform: uppercase;
 }
 
-.filters_header p{
+.filters_header p {
     margin: 0;
     margin-top: 10px;
     margin-left: 18px;
 }
 
-.items_catalog{
+.items_catalog {
     grid-area: items;
     width: 700px;
     height: 1056;
     display: grid;
     grid-template-rows: 38px 28px 990px;
-    grid-template-areas: 
-        "sorting" "." "items_bar";
+    grid-template-areas: "sorting" "." "items_bar";
 }
 
-.sorting{
+.sorting {
     grid-area: sorting;
     width: 700px;
     height: 38px;
@@ -821,11 +815,9 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-
-
 }
 
-.sorting p{
+.sorting p {
     padding: 0;
     width: 81px;
     height: 18px;
@@ -836,10 +828,9 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
-
 }
 
-.sorting ul{
+.sorting ul {
     padding: 0;
     margin: 0;
     display: flex;
@@ -848,20 +839,20 @@
     align-content: center;
 }
 
-.sorting li:nth-of-type(1){
+.sorting li:nth-of-type(1) {
     width: 53px;
     height: 18px;
-    color:#EE3643;
+    color: #EE3643;
     font-family: PT Sans;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
     padding-right: 70px;
-    }
+}
 
-.sorting li:nth-of-type(2){
-    width: 53px;    
+.sorting li:nth-of-type(2) {
+    width: 53px;
     height: 18px;
     font-family: PT Sans;
     font-size: 13px;
@@ -870,15 +861,15 @@
     text-transform: uppercase;
     color: #000000;
     padding-right: 65px;
-    }
+}
 
-.sorting li:nth-of-type(2):hover{
+.sorting li:nth-of-type(2):hover {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: red;
 }
 
-.sorting li:nth-of-type(3){
+.sorting li:nth-of-type(3) {
     width: 113px;
     height: 18px;
     font-family: PT Sans;
@@ -890,24 +881,24 @@
     padding-right: 46px;
 }
 
-.sorting li:nth-of-type(3):hover{
+.sorting li:nth-of-type(3):hover {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: red;
 }
 
-.sorting button{
+.sorting button {
     border: none;
     background-color: transparent;
 }
 
-.items_bar{
+.items_bar {
     width: 700px;
     grid-area: items_bar;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    }
+}
 
 
 /*main content in catalog page-end*/
@@ -1126,32 +1117,29 @@
     background-color: #EE3643;
     border: none;
 }
+
+
 /*aside*/
 
-.catalog_aside{
+.catalog_aside {
     grid-area: aside;
     width: 1fr;
-    height:  261px;
+    height: 261px;
     background-color: var(--back2-color);
     display: grid;
     grid-template-columns: 25vw 1fr 25vw;
     grid-template-rows: 64px 30px 25px 74px 68px;
-    grid-template-areas: ". . ."
-                        " . aside-h3 . "
-                        " . . ."
-                        ". aside-p ."
-                        " . . ."
-                        ". . .";
+    grid-template-areas: ". . ." " . aside-h3 . " " . . ." ". aside-p ." " . . ." ". . .";
 }
 
-.aside-h3{
+.aside-h3 {
     grid-area: aside-h3;
     width: 338px;
     height: 30px;
     margin: 0px;
 }
 
-.aside-h3 h3{
+.aside-h3 h3 {
     margin: 0px;
     font-family: Cuprum;
     font-size: 20px;
@@ -1160,14 +1148,13 @@
     text-transform: uppercase;
 }
 
-
-.aside-p{
+.aside-p {
     grid-area: aside-p;
     width: 907px;
     height: 74px;
 }
 
-.aside-p p{
+.aside-p p {
     font-family: 'pT Sans';
     font-size: 13px;
     font-weight: 400;
@@ -1175,6 +1162,8 @@
     margin: 0;
     text-transform: none;
 }
+
+
 /*aside*/
 
 .mainpagefooter {
@@ -1187,8 +1176,8 @@
 
 .catalog-footer {
     height: 300px;
-    grid-area: footer;}
-
+    grid-area: footer;
+}
 
 .logo_footer {
     margin-right: 134px;
@@ -1303,7 +1292,4 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-
-
 }
