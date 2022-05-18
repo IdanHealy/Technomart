@@ -206,10 +206,14 @@
 .header_menu-order {
     width: 150px;
     height: 42px;
-    background-color: #63A63E;
+    background-color: var(--basic-green-color);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header_menu-order:hover {
+    background-color: var(--success-color);
 }
 
 .header_menu-order a {
@@ -219,6 +223,16 @@
     line-height: 24px;
     color: #fff;
     text-decoration: none;
+}
+
+.header_menu-order a:active {
+    color: var(--basic-greylight-color);
+    background-color: var(--basic-green-color);
+    height: 42px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
