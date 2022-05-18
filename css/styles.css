@@ -1119,7 +1119,7 @@
 }
 
 
-/*aside*/
+/*aside in catalog*/
 
 .catalog_aside {
     grid-area: aside;
@@ -1127,7 +1127,7 @@
     height: 261px;
     background-color: var(--back2-color);
     display: grid;
-    grid-template-columns: 25vw 1fr 25vw;
+    grid-template-columns: 1fr 940px 1fr;
     grid-template-rows: 64px 30px 25px 74px 68px;
     grid-template-areas: ". . ." " . aside-h3 . " " . . ." ". aside-p ." " . . ." ". . .";
 }
@@ -1150,7 +1150,7 @@
 
 .aside-p {
     grid-area: aside-p;
-    width: 907px;
+    width: 940px;
     height: 74px;
 }
 
@@ -1164,7 +1164,7 @@
 }
 
 
-/*aside*/
+/*aside in catalog*/
 
 .mainpagefooter {
     height: 300px;
