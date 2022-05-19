@@ -1040,7 +1040,6 @@
     grid-area: price_filter;
     display: flex;
     flex-wrap: wrap;
-    grid-area: price_filter;
     width: 220px;
 }
 
@@ -1066,8 +1065,6 @@
     text-align: center;
     width: 30px;
     height: 18px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .price_filter_header {
