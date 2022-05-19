@@ -80,44 +80,41 @@
                         <p>фильтр:</p>
                     </div>
                     <div class="noname_div">
-                        <div>цена:</div>
+                        <div class="price_filter_header">цена:</div>
+                        <div class="scroller_price"></div>
                         <form action="form.php" method="GET">
                             <div>
-                                <div>
-
-                                    <div>
-                                        <label><input name="min-price" type="text" value="0"></label>
-                                        <label><input name="max-price" type="text" value="30000"></label>
-                                    </div>
-                                </div>
                             </div>
-                        </form>
-                        <div>производители:</div>
+                            <label><input name="min-price" type="text" value="0"></label> <a>-</a>
+                            <label><input name="max-price" type="text" value="30000"></label></form>
+                    </div>
+                    <div class="developers_filter">
+                        <p>производители:</p>
                         <form action="form.php" method="GET">
                             <div>
-                                <div>
-                                    <input id="check1" type="checkbox" name="makers" value="">
-                                    <label for="check1">Bosh</label>
-                                </div>
-                                <div>
-                                    <input id="check2" type="checkbox" name="makers" value="">
-                                    <label for="check2">Интерскол</label>
-                                </div>
-                                <div>
-                                    <input id="check3" type="checkbox" name="makers" value="">
-                                    <label for="check3">Makita</label>
-                                </div>
-                                <div>
-                                    <input id="check4" type="checkbox" name="makers" value="">
-                                    <label for="check4">Dewalt</label>
-                                </div>
-                                <div>
-                                    <input id="check5" type="checkbox" name="makers" value="">
-                                    <label for="check5">Hitachi</label>
-                                </div>
+                                <input id="check1" type="checkbox" name="makers" value="">
+                                <label for="check1">Bosh</label>
+                            </div>
+                            <div>
+                                <input id="check2" type="checkbox" name="makers" value="">
+                                <label for="check2">Интерскол</label>
+                            </div>
+                            <div>
+                                <input id="check3" type="checkbox" name="makers" value="">
+                                <label for="check3">Makita</label>
+                            </div>
+                            <div>
+                                <input id="check4" type="checkbox" name="makers" value="">
+                                <label for="check4">Dewalt</label>
+                            </div>
+                            <div>
+                                <input id="check5" type="checkbox" name="makers" value="">
+                                <label for="check5">Hitachi</label>
                             </div>
                         </form>
-                        <div>Питание:</div>
+                    </div>
+                    <div class="nutrition_filter">
+                        <p>Питание:</p>
                         <form action="form.php" method="GET"></form>
                         <div>
                             <div>
@@ -128,10 +125,13 @@
                                 <input id="net" type="radio" name="radio" value="akum">
                                 <label for="net">сетевые</label>
                             </div>
-                            <button>показать</button>
                         </div>
                     </div>
+                    <div class="filters_accept">
+                        <button>показать</button>
+                    </div>
                 </div>
+
                 <div class="items_catalog">
                     <div class="sorting">
                         <p>Сортировка:</p>
@@ -205,10 +205,6 @@
                         <button>3</button>
                         <button>следующая</button>
                     </div>
-                </div>
-
-            </div>
-        </div>
     </main>
     <aside class="catalog_aside">
         <div class="aside-h3">
@@ -224,7 +220,7 @@
     <footer class="catalog-footer mainpagefooter">
         <div class="footer_content_first">
             <div class="logo_footer">
-                <a href="#"><img src="img/Logos/footer-logo.png" alt="LOGO" width="260" height="68"></a>
+                <a href="#"><img src="img/Logos/footer-logo.png" alt="LOGO" width="220" height="68"></a>
             </div>
             <nav class="footer_navigation">
                 <ul>
@@ -250,14 +246,20 @@
         <div class="footer_third_content_wripper">
             <div class="footer_third_content">
                 <p>© 2010–2021 Компания «Техномарт» <br> Все права защищены</p>
-                <div>
-                    <a href="# "><img src="img/decorations/VK-icon.svg" alt="VK" width="44px" height="44px"></a>
-                    <a href="# "><img src="img/decorations/Facebook-icon.svg" alt="Facebook" width="44px" height="44px"></a>
-                    <a href="# "><img src="img/decorations/instagram-icon.svg" alt="Instagram" width="44px" height="44px"></a>
+                <div class="all_icon_in_footer_container">
+                    <div class="icon-footer-containerVK">
+                        <a href="#"></a>
+                    </div>
+                    <div class="icon-footer-container2">
+                        <a href="#"></a>
+                    </div>
+                    <div class="icon-footer-container3">
+                        <a href="#"></a>
+                    </div>
                 </div>
                 <div>Обратная связь:<br><address><a href="malito:mail@htmlacademy.ru">mail@htmlacademy.ru</a></address></div>
                 <div>Разработано -<br>
-                    <a href="https://htmlacademy.ru/ ">HTML Academy</a></div>
+                    <a class="footer_link" href="https://htmlacademy.ru/ ">HTML Academy</a></div>
             </div>
         </div>
 
