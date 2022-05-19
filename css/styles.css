@@ -1041,6 +1041,7 @@
     display: flex;
     flex-wrap: wrap;
     grid-area: price_filter;
+    width: 220px;
 }
 
 .noname_div input {
