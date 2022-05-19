@@ -478,6 +478,10 @@
     color: black;
 }
 
+.name_link a:active{
+    color: var(--basic-greylight-color);
+}
+
 .order_and_personal_area_link {
     /*in catalog*/
     grid-area: links;
@@ -485,6 +489,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
 
 .order_and_personal_area_link a:nth-of-type(1) {
     /*in catalog*/
@@ -508,6 +513,13 @@
     text-align: left;
 }
 
+.order_and_personal_area_link a:hover{
+    color:var(--basic-red-color);
+}
+
+.order_and_personal_area_link a:active{
+    color:var(--basic-greylight-color);}
+
 .point a {
     margin: 0;
     width: 18px;
@@ -515,6 +527,10 @@
     justify-content: center;
     align-content: center;
     display: flex;
+}
+
+.point a:hover{
+    color:#32425C;
 }
 
 .header_information-navigation {
@@ -704,6 +720,22 @@
     margin-bottom: 21px;
 }
 
+.saa_link:hover{
+    background-color: rgba(197, 197, 197, 0.3);
+}
+
+.saa_link a:active{
+    width: 135px;   
+    height: 38px;
+    background-color: rgba(169, 169, 169, 0.3);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
 .saa_link a {
     text-decoration: none;
     color: white;
@@ -741,6 +773,34 @@
     letter-spacing: 0px;
     background-image: url(../img/content/perforators-first-image.jpg);
     background-color: lightblue;
+}
+
+.perforators button{
+    width: 192px;
+    height: 38px;
+    border: none;
+    background-color: var(--basic-red-color);
+     margin-top: 80px;   
+    margin-left: 24px;
+    
+}
+
+.perforators button a{
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.perforators button:hover{
+    background-color: #CA2C37;
+    }
+
+.perforators button:active{
+    background-color: #BA2732;
 }
 
 .item_presetation {
@@ -894,6 +954,10 @@
 
 .developers_logos_card:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.developers_logos_card :active{
+    opacity: 0.5;
 }
 
 
@@ -1124,7 +1188,7 @@
 .items_nav button:nth-child(2) {
     width: 38px;
     height: 38px;
-    border: 1px solid lightgray;
+    border: 1px solid #E5E5E5;
     border-radius: 2px;
     margin-right: 10px;
     background-color: #fff;
@@ -1138,7 +1202,7 @@
 .items_nav button:nth-child(3) {
     height: 38px;
     width: 38px;
-    border: 1px solid lightgray;
+    border: 1px solid #E5E5E5;
     border-radius: 2px;
     margin-right: 10px;
     background-color: #fff;
@@ -1152,7 +1216,7 @@
 .items_nav button:nth-child(4) {
     height: 38px;
     width: 140px;
-    border: 1px solid lightgray;
+    border: 1px solid #E5E5E5;
     border-radius: 2px;
     background-color: #fff;
     font-family: PT Sans;
@@ -1163,7 +1227,13 @@
     text-transform: uppercase;
 }
 
+.items_nav button:hover{
+    border-color: var(--basic-greylight-color);
+}
 
+.items_nav button:active{
+    border-color: var(--basic-red-color);
+}
 /*main content in catalog page-end*/
 
 .credit_delivery_warranty {
