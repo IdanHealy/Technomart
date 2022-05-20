@@ -1878,6 +1878,11 @@ address a:hover {
     text-decoration: underline;
 }
 
+address a:active{
+    color: var(--basic-red-color);
+    text-decoration: none;
+}
+
 .footer_link {
     text-decoration: none;
 }
@@ -1886,9 +1891,19 @@ address a:hover {
     text-decoration: underline;
 }
 
+.footer_link:active {
+    text-decoration: none;
+    color:var(--basic-red-color);
+}
+
+
 .footer_third_content a {
     color: #FFD180;
 }
+
+
+
+
 
 .footer_third_content_wripper {
     margin-top: 30px;
