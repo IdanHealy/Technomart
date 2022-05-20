@@ -849,18 +849,41 @@
 }
 
 .item_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 219px;
     height: 317px;
     font-family: 'PT Sans';
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
-    justify-content: space-around;
     border: 1px solid lightgrey;
     margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: 219px;
+    grid-template-rows: 179px 41px 7px 18px 13px 38px 21px;
+    align-items: center;
+    justify-items: center;
+}
+
+.item_cover {
+    display: grid;
+    grid-template-rows: 70 auto;
+    grid-template-columns: auto;
+}
+
+.new {
+    z-index: 3;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 104px;
+}
+
+.item_cover_img {
+    z-index: 2;
+    position: relative;
+    top: -30px;
+    left: -10px;
 }
 
 .item_container:hover {
@@ -874,6 +897,8 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
+    text-align: center;
+    grid-area: 4/1/4/1;
 }
 
 .item_container p {
@@ -881,6 +906,24 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 18px;
+    grid-area: 2/1/2/1;
+    margin: 0;
+    text-align: center;
+}
+
+.red_price {
+    width: 141px;
+    height: 38px;
+    grid-area: 6/1/6/1;
+    background-color: var(--basic-red-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red_price a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .developers {
@@ -1450,7 +1493,17 @@
     color: white;
 }
 
-.cdw_buttons button:nth-of-type(1) {
+.cdw_third_block {
+    width: 629px;
+    height: 283px;
+    margin-left: 80px;
+    margin-top: 47px;
+    background-image: url(../img/decorations/Delivery-machine.svg);
+    background-repeat: no-repeat;
+    background-position: 162px 22px;
+}
+
+.cdw_buttons button:focus {
     width: 240px;
     height: 61px;
     background-color: white;
@@ -1462,16 +1515,6 @@
     text-align: center;
     border: none;
     color: var(--back3-color);
-}
-
-.cdw_third_block {
-    width: 629px;
-    height: 283px;
-    margin-left: 80px;
-    margin-top: 47px;
-    background-image: url(../img/decorations/Delivery-machine.svg);
-    background-repeat: no-repeat;
-    background-position: 162px 22px;
 }
 
 .cdw_third_block h1 {
