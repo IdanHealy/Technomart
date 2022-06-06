@@ -617,6 +617,13 @@
     margin-bottom: 59px;
 }
 
+.new_materials {
+    position: relative;
+    z-index: 100;
+    left: 73px;
+    top: -26px;
+}
+
 .services_and_adversting .saa1 {
     max-width: 940px;
     height: 123px;
@@ -745,6 +752,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.matrial_icon_img {
+    position: relative;
+    left: -30px;
 }
 
 .sales {
@@ -1878,7 +1890,7 @@ address a:hover {
     text-decoration: underline;
 }
 
-address a:active{
+address a:active {
     color: var(--basic-red-color);
     text-decoration: none;
 }
@@ -1893,17 +1905,12 @@ address a:active{
 
 .footer_link:active {
     text-decoration: none;
-    color:var(--basic-red-color);
+    color: var(--basic-red-color);
 }
-
 
 .footer_third_content a {
     color: #FFD180;
 }
-
-
-
-
 
 .footer_third_content_wripper {
     margin-top: 30px;
