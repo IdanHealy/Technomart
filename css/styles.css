@@ -134,20 +134,32 @@
 
 .header_menu-search {
     display: flex;
-    width: 290px;
+    width: 263px;
     height: 42px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    position: relative;
+    background-image: url(/img/decorations/icon-search.png);
+    background-position: 1% 50%;
+    background-color: #293449;
+}
+
+.header_menu-search:active {
+    background-color: #fff;
 }
 
 .header_menu-search input {
     background-color: #293449;
+    background-image: url(/img/decorations/icon-search.svg);
+    background-repeat: repeat-y;
+    background-position: 0% 20%;
+    color: #fff;
     border: none;
     font-family: 'Cuprum';
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    color: #fff;
+    padding-left: 42px;
 }
 
 .header_menu-search input:focus {
@@ -164,7 +176,9 @@
     height: 42px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    background-image: url(/img/decorations/BOOKMARKS-IMAGE.svg);
+    background-position: 50% 50%;
 }
 
 .header_menu-bookmarks:active {
@@ -269,13 +283,10 @@
 }
 
 
-/*//////////////////////////////menu in header-end//////////////////////////////*/
+/*menu in header-end*/
 
 
-/**************************************************************************************************/
-
-
-/*//////////////////////////////information in header-start//////////////////////////////*/
+/*information in header-start*/
 
 .information_wrapper {
     display: grid;
