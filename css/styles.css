@@ -139,7 +139,6 @@
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    background-image: url(/img/decorations/icon-search.png);
     background-position: 1% 50%;
     background-color: #293449;
 }
@@ -149,10 +148,10 @@
 }
 
 .header_menu-search input {
-    background-color: #293449;
-    background-image: url(/img/decorations/icon-search.svg);
-    background-repeat: repeat-y;
-    background-position: 0% 20%;
+    background-color: transparent;
+    background-image: url(../img/decorations/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
     color: #fff;
     border: none;
     font-family: 'Cuprum';
@@ -160,15 +159,24 @@
     font-weight: 400;
     line-height: 24px;
     padding-left: 42px;
+    opacity: 50%;
+}
+
+.header_menu-search input:hover {
+    opacity: 100%;
 }
 
 .header_menu-search input:focus {
     background-color: white;
+    background-image: url(../img/decorations/icon-search-red.png);
+    background-repeat: no-repeat;
+    background-position: 8% 50%;
     width: 288px;
     height: 42px;
     color: black;
     border-color: #fff;
     outline: none;
+    opacity: 100%;
 }
 
 .header_menu-bookmarks {
