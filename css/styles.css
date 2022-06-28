@@ -88,7 +88,7 @@
 }
 
 
-/*//////////////////////////////menu in header-start//////////////////////////////*/
+/*menu in header-start*/
 
 .menu_wrapper {
     display: grid;
@@ -134,7 +134,7 @@
 
 .header_menu-search {
     display: flex;
-    width: 263px;
+    width: 270px;
     height: 42px;
     align-items: center;
     justify-content: flex-start;
@@ -151,8 +151,7 @@
     background-color: transparent;
     background-image: url(../img/decorations/icon-search.svg);
     background-repeat: no-repeat;
-    background-position: 10% 50%;
-    color: #fff;
+    background-position: 5% 50%;
     border: none;
     font-family: 'Cuprum';
     font-size: 18px;
@@ -160,6 +159,7 @@
     line-height: 24px;
     padding-left: 42px;
     opacity: 50%;
+    width: 270px;
 }
 
 .header_menu-search input:hover {
@@ -170,8 +170,7 @@
     background-color: white;
     background-image: url(../img/decorations/icon-search-red.png);
     background-repeat: no-repeat;
-    background-position: 8% 50%;
-    width: 288px;
+    background-position: 5% 50%;
     height: 42px;
     color: black;
     border-color: #fff;
@@ -180,30 +179,27 @@
 }
 
 .header_menu-bookmarks {
-    width: 130px;
-    height: 42px;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-image: url(/img/decorations/BOOKMARKS-IMAGE.svg);
-    background-position: 50% 50%;
+    width: 150px;
+    height: 42px;
+    align-items: center; 
+    background: url(../img/decorations/BOOKMARKS-IMAGE.svg) no-repeat 15% 50%;
 }
 
-.header_menu-bookmarks:active {
-    background-color: #161D29;
-}
-
-.header_menu-bookmarks a {
+.header_menu-bookmarks a{
     font-family: 'Cuprum';
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     color: #fff;
     text-decoration: none;
+    padding-left: 43px;
+    opacity: 100%;
 }
 
-.header_menu-bookmarks a:active {
+.header_menu-bookmarks:active {
     color: var(--basic-greylight-color);
+    opacity: 50%;
 }
 
 .header_menu_mainpage-basket {
@@ -290,9 +286,7 @@
     justify-content: center;
 }
 
-
 /*menu in header-end*/
-
 
 /*information in header-start*/
 
@@ -615,12 +609,7 @@
     align-items: center;
 }
 
-
 /*information in header-end*/
-
-
-/**/
-
 
 /*main content in index page-start*/
 
@@ -1195,7 +1184,7 @@
     height: 19px;
     width: 82px;
     margin-left: 12px;
-    | display: grid;
+    display: grid;
     vertical-align: top;
 }
 
