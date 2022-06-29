@@ -1096,13 +1096,18 @@
 .item_container_buttons{
     display: flex;
     position: absolute;
-    top: 50px;
+    top: 40px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:first baseline;
+    align-items: center;
     background-color: white;
-    width: 135px;
-    height: 86px;
-    z-index: 2;
+    width: 219px;
+    height: 130px;
+    z-index: 1;
+}
+
+.item_container_buttons:hover{
+    z-index: 3;
 }
 
 .item_container_buttons button{
@@ -1117,41 +1122,62 @@
     text-transform: uppercase;
     color:white;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 
-.item_container_buttons button:nth-of-type(1){
+.buy{
     background-color: var(--basic-green-color);
     border:none;
     border-bottom: 3px solid #518534;
 }
 
-.item_container_buttons>button:nth-of-type(2){
+.buy a{
+    text-decoration: none;
+    color: white;
+}
+
+.buy:hover{
+    background-color: #5FBB2D;
+  
+}
+
+
+
+.in_bookmarks{
     color:#32425C;
     background-color: white;
     border: 3px solid #63A63E;
 }
 
+.in_bookmarks:hover{
+    border: 3px solid var(--back3-color);
+}
 
+.in_bookmarks a{
+    color: var(--back3-color);
+    text-decoration: none;
+}
 
 .item_cover {
     display: grid;
-    width: 219px;
-    height: 150px;
+    width: 135px;
+    height: 120px;
     background-color: white;
     grid-template-rows: 70 auto;
     grid-template-columns: auto;
     align-items: center;
     justify-items: center;
-    z-index: 3;
+    z-index: 2;
 }
 
 .item_cover:hover{
+    z-index: 1;
     display: none;
 }
 
 .new {
-    z-index: 4;
+    z-index: 100;
     position: absolute;
     width: 70px;
     height: 70px;
@@ -1164,7 +1190,7 @@
 }
 
 .item_cover_img:hover{
-   visibility: collapse;
+   display: none;
 }
 
 .item_container:hover {
