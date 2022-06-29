@@ -1147,7 +1147,7 @@
 }
 
 .item_cover:hover{
-    visibility: collapse;
+    display: none;
 }
 
 .new {
@@ -1760,8 +1760,9 @@
     justify-content: left;
     align-items: center;
     border:none;
-    box-shadow: inset -10px 0px 4px -8px rgba(50, 50, 50, 0.5);
+    box-shadow: inset -4px 0px 4px -3px rgba(50, 50, 50, 0.25);
     border-right: 1px solid white;
+
 }
 
 .cdw_buttons {
@@ -1786,7 +1787,6 @@
     text-align: center;
     border: 1px solid #293449;
     color: white;
-    box-shadow: inset -10px 0px 4px -6px rgba(50, 50, 50, 0.5);
 }
 
 
