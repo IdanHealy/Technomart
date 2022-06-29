@@ -389,9 +389,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Cuprum;
+    font-family: Cuprumitalic;
     font-size: 16px;
-    font-style: italic;
+    font-style:;
     font-weight: 400;
     line-height: 23px;
     color: #EE3643;
@@ -693,16 +693,18 @@
 }
 
 .header_information-navigation ul {
-    display: grid;
-    grid-template-columns: 122px 122px 122px 122px 170px 122px 122px;
+    width: 940px;
+    height: 55px;
+    display: flex;
     height: 60px;
     background-color: var(--back3-color);
     list-style-type: none;
     margin: 0;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px;
+    border-bottom: 5px solid var(--back1-color);
 }
 
 .navigation_links a {
@@ -715,24 +717,29 @@
 }
 
 .navigation_links a:active {
-    color: var(--basic-greylight-color)
+    color: var(--basic-greylight-color);
+}
+
+.navigation_links li{
+    width: 122px;
 }
 
 .navigation_links li:hover {
+    display: flex;
     background-color: var(--back1-color);
     height: 60px;
-    width: 122px;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    text-align: center;
+    justify-content: center;
     align-items: center;
+    width: 122px;
+}
+.navigation_links li:nth-last-of-type(3){
+    width: 150px;
 }
 
 .navigation_links li:nth-last-of-type(3):hover {
     background-color: var(--back1-color);
     height: 60px;
-    width: 170px;
+    width: 150px;
     margin: 0;
     padding: 0;
     display: grid;
@@ -930,11 +937,36 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0px;
-    background-image: url(../img/content/perforators-first-image.jpg);
     background-color: lightblue;
 }
 
-.perforators button {
+.slide_one{
+    background: url(../img/content/perforators-first-image.jpg) no-repeat;
+    height: 266px;
+    padding-top: 23px;
+    padding-left: 24px;
+}
+
+.slide_two{
+    background: url(../img/content/drills-first-image.jpg) no-repeat;
+    height: 266px;
+    padding-top: 23px;
+    padding-left: 24px;
+}
+
+.slide{
+    display: none;
+}
+
+.slide--current{
+    display: block;
+}
+
+.slide-current{
+    display: block;
+}
+
+.catalog_button {
     width: 192px;
     height: 38px;
     border: none;
@@ -943,7 +975,13 @@
     margin-left: 24px;
 }
 
-.perforators button a {
+.perforators h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.catalog_button a {
     font-family: Cuprum;
     font-size: 14px;
     font-weight: 400;
@@ -953,11 +991,39 @@
     text-decoration: none;
 }
 
-.perforators button:hover {
+.button_slide_one{
+    width: 22px;
+    height: 40px;
+    background-image: url(../img/decorations/icon-left.svg);
+    z-index: 1000;
+    margin: 0;
+    position:relative;
+    top: -165px;
+    left: 24px;
+    background-color: transparent;
+    border: none;
+    }
+    
+.button_slide_two{
+    width: 22px;
+    height: 40px;
+    background-image: url(../img/decorations/icon-left.svg);
+    transform: rotate(180deg);
+    z-index: 1000;
+    margin: 0;
+    position:relative;
+    top: -165px;
+    left: 548px;
+    background-color: transparent;
+    border: none;
+    }
+
+
+.catalog_button:hover {
     background-color: #CA2C37;
 }
 
-.perforators button:active {
+.catalog_button:active {
     background-color: #BA2732;
 }
 
@@ -972,7 +1038,7 @@
     justify-content: space-between;
 }
 
-.item_presetation button {
+.item_presentation-button button:nth-of-type(1) {
     text-decoration: none;
     width: 192px;
     height: 38px;
@@ -1024,28 +1090,81 @@
     grid-template-rows: 179px 41px 7px 18px 13px 38px 21px;
     align-items: center;
     justify-items: center;
+    position:relative;
 }
+
+.item_container_buttons{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 135px;
+    height: 86px;
+    z-index: 2;
+}
+
+.item_container_buttons button{
+    width: 135px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:white;
+    border-radius: 3px;
+}
+
+
+.item_container_buttons button:nth-of-type(1){
+    background-color: var(--basic-green-color);
+    border:none;
+    border-bottom: 3px solid #518534;
+}
+
+.item_container_buttons>button:nth-of-type(2){
+    color:#32425C;
+    background-color: white;
+    border: 3px solid #63A63E;
+}
+
+
 
 .item_cover {
     display: grid;
+    width: 219px;
+    height: 150px;
+    background-color: white;
     grid-template-rows: 70 auto;
     grid-template-columns: auto;
+    align-items: center;
+    justify-items: center;
+    z-index: 3;
+}
+
+.item_cover:hover{
+    visibility: collapse;
 }
 
 .new {
-    z-index: 3;
-    position: relative;
+    z-index: 4;
+    position: absolute;
     width: 70px;
     height: 70px;
     top: 0px;
-    left: 104px;
+    left: 149px;
 }
 
-.item_cover_img {
-    z-index: 2;
-    position: relative;
-    top: -30px;
-    left: -10px;
+.item_cover_img{
+    position: absolute;
+}
+
+.item_cover_img:hover{
+   visibility: collapse;
 }
 
 .item_container:hover {
@@ -1074,7 +1193,7 @@
 }
 
 .red_price {
-    width: 141px;
+    width: 122px;
     height: 38px;
     grid-area: 6/1/6/1;
     background-color: var(--basic-red-color);
@@ -1083,9 +1202,21 @@
     align-items: center;
 }
 
+.red_price::after {
+    content:"";
+    width: 26px;
+    height: 26px;
+    background-color: var(--basic-red-color);
+    transform: rotate(45deg);
+    position: relative;
+    left: 26px;
+    
+}
+
 .red_price a {
     text-decoration: none;
     color: #fff;
+    transform: translateX(20px);
 }
 
 .developers {
@@ -1628,12 +1759,14 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    border-right: black solid 1px;
+    border:none;
+    box-shadow: inset -10px 0px 4px -8px rgba(50, 50, 50, 0.5);
+    border-right: 1px solid white;
 }
 
 .cdw_buttons {
-    width: 240px;
-    height: 183px;
+    width: 239px;
+    height: 182px;
     display: flex;
     flex-direction: column;
     margin: 0%;
@@ -1651,9 +1784,11 @@
     line-height: 30px;
     letter-spacing: 0px;
     text-align: center;
-    border: none;
+    border: 1px solid #293449;
     color: white;
+    box-shadow: inset -10px 0px 4px -6px rgba(50, 50, 50, 0.5);
 }
+
 
 .cdw_third_block {
     width: 629px;
@@ -1663,6 +1798,10 @@
     background-image: url(../img/decorations/Delivery-machine.svg);
     background-repeat: no-repeat;
     background-position: 162px 22px;
+}
+
+.cdw_buttons button:hover{
+    background-color: var(--back1-color);
 }
 
 .cdw_buttons button:focus {
