@@ -246,6 +246,15 @@
     opacity: 100%;
 }
 
+.header_menu_mainpage-basket:active::before{
+    content: "";
+    background: url(../img/decorations/korsina-icon.svg) no-repeat 50% 50%;
+    background-size: 15px 15px ;
+    width: 30px;
+    height: 30px;
+    opacity: 50%;
+}
+
 .header_menu_mainpage-basket {
     width: 150px;
     height: 42px;
