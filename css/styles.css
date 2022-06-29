@@ -160,6 +160,16 @@
     padding-left: 42px;
     opacity: 50%;
     width: 270px;
+    color: white;
+}
+
+.header_menu-search input::-moz-placeholder{
+    color: white;
+}
+
+.header_menu-search input::-webkit-input-placeholder{
+    color: white;
+
 }
 
 .header_menu-search input:hover {
@@ -178,12 +188,27 @@
     opacity: 100%;
 }
 
+.header_menu-bookmarks::before{
+    content: "";
+    background: url(../img/decorations/BOOKMARKS-IMAGE.svg) no-repeat 50% 50%;
+    width: 30px;
+    height: 16px;
+    opacity: 50%;
+}
+
+.header_menu-bookmarks:hover::before{
+    content: "";
+    background: url(../img/decorations/BOOKMARKS-IMAGE.svg) no-repeat 50% 50%;
+    width: 30px;
+    height: 16px;
+    opacity: 100%;
+}
+
 .header_menu-bookmarks {
     display: flex;
     width: 150px;
     height: 42px;
     align-items: center; 
-    background: url(../img/decorations/BOOKMARKS-IMAGE.svg) no-repeat 15% 50%;
 }
 
 .header_menu-bookmarks a{
@@ -193,13 +218,30 @@
     line-height: 24px;
     color: #fff;
     text-decoration: none;
-    padding-left: 43px;
     opacity: 100%;
 }
 
 .header_menu-bookmarks:active {
-    color: var(--basic-greylight-color);
+    background-color: #161D29;
     opacity: 50%;
+}
+
+.header_menu_mainpage-basket::before{
+    content: "";
+    background: url(../img/decorations/korsina-icon.svg) no-repeat 50% 50%;
+    background-size: 15px 15px ;
+    width: 30px;
+    height: 30px;
+    opacity: 50%;
+}
+
+.header_menu_mainpage-basket:hover::before{
+    content: "";
+    background: url(../img/decorations/korsina-icon.svg) no-repeat 50% 50%;
+    background-size: 15px 15px ;
+    width: 30px;
+    height: 30px;
+    opacity: 100%;
 }
 
 .header_menu_mainpage-basket {
