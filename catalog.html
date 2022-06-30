@@ -67,10 +67,12 @@
     <main class="catalog-main-grid">
         <div class="catalog_container">
             <div class="catalog_navigation">
-                <ul>
+                <ul class="catalog_nav_ul">
                     <li></li>
                     <li>каталог</li>
+                    <li></li>
                     <li>инструмент</li>
+                    <li></li>
                     <li>перфораторы</li>
                 </ul>
             </div>
@@ -82,15 +84,35 @@
                     <div class="filters_header">
                         <p>фильтр:</p>
                     </div>
-                    <div class="noname_div">
-                        <div class="price_filter_header">цена:</div>
-                        <div class="scroller_price"></div>
-                        <form action="form.php" method="GET">
-                            <div>
+                <div class="white_space"></div>
+                    <form method="get" action="https://echo.htmlacademy.ru">
+                        <fieldset class="filter-item">
+                            <legend>Цена:</legend>
+                            <div class="range-filter">
+                              <div class="range-controls">
+                                <div class="scale">
+                                  <div class="bar" style="
+                                    width: 80%;
+                                    "></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0" style="
+                                  left: 9%
+                                "></div>
+                                <div class="toggle toggle-max" tabindex="0" style="
+                                  left: 70%
+                                "></div>
+                              </div>
+                              <div class="price-controls">
+                                <label class="min-price">
+                                  <input type="number" name="min-price" value="0">
+                                </label>
+                                <div class="dash">—</div>
+                                <label class="max-price">
+                                    <input type="number" name="max-price" value="30000">
+                                </label>
+                              </div>
                             </div>
-                            <label><input name="min-price" type="text" value="0"></label> <a>—</a>
-                            <label><input name="max-price" type="text" value="30000"></label></form>
-                    </div>
+                        </fieldset>
                     <div class="developers_filter">
                         <p>производители:</p>
                         <form action="form.php" method="GET">
@@ -147,86 +169,119 @@
                         </ul>
                     </div>
                     <div class="items_bar">
+
                         <div class="item_container">
-                            <img src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button></div>
+                            <div class="item_cover">
+                                <img class="item_cover_img" src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            </div>
                             <p>Перфоратор BOSH<br>BFG 6000</p>
                             <s>30500 р.</s>
                             <div class="red_price">
                                 <a href="#">25500 р.</a>
                             </div>
                         </div>
+
                         <div class="item_container">
-                            <img src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button></div>
+                            <div class="item_cover">
+                                <img class="item_cover_img" src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            </div>
                             <p>Перфоратор BOSH<br>BFG 6000</p>
                             <s>30500 р.</s>
                             <div class="red_price">
                                 <a href="#">25500 р.</a>
                             </div>
                         </div>
+
                         <div class="item_container">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button></div>
                             <div class="item_cover">
-                                <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
-                                <img class="item_cover_img" src="img/content/bfg-6000.png" width="127" height="112"></div>
-                            <p>Перфоратор<br>BOSH BFG 6000</p>
+                                <img class="item_cover_img" src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            </div>
+                            <p>Перфоратор BOSH<br>BFG 6000</p>
                             <s>30500 р.</s>
                             <div class="red_price">
                                 <a href="#">25500 р.</a>
                             </div>
                         </div>
+
                         <div class="item_container">
+                            <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button><a href=""></a></div>
                             <div class="item_cover">
-                                <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
-                                <img class="item_cover_img" src="img/content/bfg-3000.png" width="127" height="112"></div>
+                                <img class="item_cover_img" src="img/content/bfg-3000.png" width="127" height="112" alt="BFG-3000">
+                            </div>
                             <p>Перфоратор<br>BOSH BFG 3000</p>
                             <s>25500 р.</s>
                             <div class="red_price">
                                 <a href="#">15500 р.</a>
                             </div>
                         </div>
+
                         <div class="item_container">
-                            <img src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button></div>
+                            <div class="item_cover">
+                                <img class="item_cover_img" src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            </div>
                             <p>Перфоратор BOSH<br>BFG 6000</p>
                             <s>30500 р.</s>
                             <div class="red_price">
                                 <a href="#">25500 р.</a>
                             </div>
                         </div>
+
                         <div class="item_container">
+                            <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></button></div>
                             <div class="item_cover">
-                                <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
-                                <img class="item_cover_img" src="img/content/bfg-2000.png" width="127" height="112"></div>
+                                <img class="item_cover_img" src="img/content/bfg-2000.png" width="127" height="112">
+                            </div>
                             <p>Перфоратор<br>BOSH BFG 2000</p>
+                            <s>22500 р.</s>
                             <div class="red_price">
                                 <a href="#">12500 р.</a>
                             </div>
                         </div>
+
                         <div class="item_container">
+                            <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button><a href=""></a></div>
                             <div class="item_cover">
-                                <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
-                                <img class="item_cover_img" src="img/content/bfg-3000.png" width="127" height="112"></div>
+                                <img class="item_cover_img" src="img/content/bfg-3000.png" width="127" height="112" alt="BFG-3000">
+                            </div>
                             <p>Перфоратор<br>BOSH BFG 3000</p>
-                            <s>22500 р.</s>
+                            <s>25500 р.</s>
                             <div class="red_price">
                                 <a href="#">15500 р.</a>
                             </div>
                         </div>
+                        
                         <div class="item_container">
-                            <img src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button></div>
+                            <div class="item_cover">
+                                <img class="item_cover_img" src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
+                            </div>
                             <p>Перфоратор BOSH<br>BFG 6000</p>
                             <s>30500 р.</s>
                             <div class="red_price">
                                 <a href="#">25500 р.</a>
                             </div>
                         </div>
+
                         <div class="item_container">
+                            <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
+                            <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></button></div>
                             <div class="item_cover">
-                                <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
-                                <img class="item_cover_img" src="img/content/bfg-2000.png" width="127" height="112"></div>
+                                <img class="item_cover_img" src="img/content/bfg-2000.png" width="127" height="112">
+                            </div>
                             <p>Перфоратор<br>BOSH BFG 2000</p>
+                            <s>22500 р.</s>
                             <div class="red_price">
                                 <a href="#">12500 р.</a>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="items_nav">
                         <button>1</button>
