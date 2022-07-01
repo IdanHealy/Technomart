@@ -188,21 +188,15 @@
     opacity: 100%;
 }
 
-.header_menu-bookmarks::before{
-    content: "";
-    background: url(../img/decorations/BOOKMARKS-IMAGE.svg) no-repeat 50% 50%;
-    width: 30px;
-    height: 30px;
-    opacity: 50%;
-    background-size: 14px 16px;
+.header_menu-bookmarks svg{
+    fill-opacity: 50%;
+    position: relative;
+    left: -5px;
+    top: 2px;
 }
 
-.header_menu-bookmarks:hover::before{
-    content: "";
-    background: url(../img/decorations/BOOKMARKS-IMAGE.svg) no-repeat 50% 50%;
-    width: 30px;
-    height: 30px;
-    opacity: 100%;
+.bookmarks_svg:hover{
+    fill-opacity: 100%;
 }
 
 .header_menu-bookmarks {
