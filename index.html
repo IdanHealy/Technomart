@@ -4,7 +4,7 @@
     <title>Техномарт</title>
     <meta charset="utf-8">
     <meta title="ТЕХНОМАРТ">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" rel="stylesheet">
@@ -420,6 +420,33 @@
             </div>
         </div>
     </footer>
+
+    <div class="input__modal modal">
+        <button class="cancel__button" aria-label="Закрыть"></button>
+        <form class="modal__name">
+            <fieldset>
+                <legend>Ваше имя:</legend>
+                <input type="text" placeholder="  Имя Фамилия">
+            </fieldset>
+        </form>
+        <form class="modal__email">
+            <fieldset>
+                <legend>Ваш e-mail:</legend>
+                <input type="text" placeholder="  email@example.com">
+            </fieldset>
+        </form>
+        <form class="modal__text">
+            <fieldset>
+                <legend>Текст письма:</legend>
+                <textarea placeholder="  В свободной форме"></textarea>
+            </fieldset>
+        </form>
+        <form class="modal__submit">
+            <fieldset>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
