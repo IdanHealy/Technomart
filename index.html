@@ -4,7 +4,7 @@
     <title>Техномарт</title>
     <meta charset="utf-8">
     <meta title="ТЕХНОМАРТ">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" rel="stylesheet">
@@ -26,6 +26,9 @@
                 </div>
                 <div class="header_menu-search">
                     <input type="search" ; placeholder="Поиск:">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                        </svg>
                 </div>
                 <div class="header_menu-bookmarks">
                     <a href="#" id="bookmarks" class="bookmarks_a">Закладки: 0</a>
@@ -145,7 +148,7 @@
                     <div class="slide_two slide slide--current">
                         <h2>Дрели</h2>
                         <p>Соседям на радость!</p>
-                        <button class="catalog_button">
+                        <button class="catalog_button button_style">
                             <a href="catalog.html">открыть каталог</a>
                         </button>
                     </div>
@@ -183,7 +186,7 @@
         <section class="item_presetation">
             <div class="item_presentation-header">
                 <p>ПОПУЛЯРНЫЕ ТОВАРЫ:</p>
-                <div class="item_presentation-button"><button><a href="#">Все популярные товары</a></button></div>
+                <div class="item_presentation-button"><button class="button_style"><a href="#">Все популярные товары</a></button></div>
             </div>
 
             <div class="item_container">
@@ -249,7 +252,7 @@
         <section class="developers">
             <div class="developers_header">
                 <p>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</p>
-                <button>
+                <button class="button_style">
                     <a href="# ">ВСЕ ПРОИЗВОДИТЕЛИ</a>
                 </button>
             </div>
@@ -301,25 +304,29 @@
 
         <!----секция с описанием полезных услуг-->
         <section class="credit_delivery_warranty">
-            <div class="cdw_wrapper">
-                <div class="cdw_first_block">
                     <h1>Сервисы</h1>
                     <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-                </div>
-                <div class="friendly_container">
-                    <div class="cdw_second_block">
-                        <div class="cdw_buttons">
-                            <button>Доставка</button>
-                            <button>Гарантия</button>
-                            <button>Кредит</button>
+                    <div class="cdw_shadow_block">
+                        <div class="cdw_buttons_container">
+                            
+                                <input type="checkbox" name="delivery" id="1" checked>
+                            <label for="1">
+                                Доставка
+                            </label>
+                                <input type="checkbox" name="warranty" id="2">
+                            <label for="2">
+                                Гарантия
+                            </label>
+                                <input type="checkbox" name="credit" id="3">
+                                <label for="3">
+                                    Кредит
+                                </label>
                         </div>
                     </div>
-                    <div class="cdw_third_block">
+                    <div class="sdw_first_slide">
                         <h1>Доставка</h1>
-                        <p>Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+                        <p>Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>      
                     </div>
-                </div>
-            </div>
         </section>
 
         <!--Немного о компаний и карта,контакты-->
@@ -339,14 +346,14 @@
                         <img src="img/decorations/red-bullet-ul.png" width="25" height="2" alt="">ЖелДорЭкспедиция
                     </li>
                 </ul>
-                <button class="contacts_button"><a href="#">Подробнее о компаний</a></button>
+                <button class="contacts_button button_style"><a href="#">Подробнее о компаний</a></button>
             </div>
             <div class="map">
                 <h1 class="contacts-index">Контакты</h1>
                 <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
                 <a href="# " class="js_open_map">
                     <img src="img/content/adress-map.png" width="300" height="158" alt="карта"></a>
-                <button class="map_button"><a href="#">Заблудились? Напишите нам!</a></button>
+                <button class="map_button button_style" ><a href="#">Заблудились? Напишите нам!</a></button>
             </div>
         </section>
     </main>
@@ -447,6 +454,10 @@
             </fieldset>
         </form>
     </div>
+    <div class="map__modal modal">
+        <button class="cancel__button" aria-label="Закрыть"></button>
+        <!--<img src="../Technomart-Project-for-HTMLAcademy/img/map/map.png" width="943" height="442" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8190704953884!2d30.31517031618895!3d59.96832466666546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0404761c7ba6772!2zNTnCsDU4JzA2LjAiTiAzMMKwMTknMDIuNSJF!5e0!3m2!1sru!2sru!4v1657048977422!5m2!1sru!2sru" width="943" height="442" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
 </body>
 
 </html>

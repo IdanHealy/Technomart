@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="Icon-Composer-icon.ico">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <meta charset="utf-8">
     <meta lang="ru">
@@ -23,7 +23,10 @@
                 <div class="header_menu-logotype">
                     <a href="index.html"><img src="img/Logos/logo-technomart.svg" alt="logotype" width="108" height="18"></a>
                 </div>
-                <div class="header_menu-search icon_search"><input type="search" ; placeholder="Поиск:"></div>
+                <div class="header_menu-search icon_search"><input type="search" ; placeholder="Поиск:">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                    </svg></div>
                 <div class="header_menu-bookmarks">
                     <a href="#" id="bookmarks" class="bookmarks_a">Закладки: 0</a>
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,13 +133,11 @@
                                     Bosh    
                                 </label>
                            
-                            
                                 <label class="check option">
                                     <input class="check__input" type="checkbox">
                                     <span class="check__box"></span>
                                     Интерскол
                                 </label>
-                            
                             
                                 <label class="check option">
                                     <input class="check__input" type="checkbox" checked>
@@ -144,21 +145,19 @@
                                     Makita
                                 </label>
                            
-                            
                                 <label class="check option">
                                     <input class="check__input" type="checkbox" disabled>
                                     <span class="check__box"></span>
                                     Dewalt
                                 </label>
                           
-                           
                                 <label class="check option">
                                     <input class="check__input" type="checkbox" disabled checked>
                                     <span class="check__box"></span>
                                     hitachi
                                 </label>      
                         </fieldset> 
-                        </form>
+                    </form>
 
                         <form method="get" action="https://echo.htmlacademy.ru" class="nutrition_filter">
                             <fieldset>
@@ -319,13 +318,9 @@
                     </div>
     </main>
     <aside class="catalog_aside">
-        <div class="aside-h3">
             <h3>пара слов о перфораторах</h3>
-        </div>
-        <div class="aside-p">
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
                 шуруповерта и отбойного молотка.<br> В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-        </div>
     </aside>
 
     <!--Footer-->
@@ -375,4 +370,12 @@
             </div>
         </div>
     </footer>
+    <div class="add-item__modal modal">
+        <button class="cancel__button" aria-label="Закрыть"></button>
+            <p>Товар добавлен в корзину!</p>
+        <div class="button-contaier__modal">
+            <button>оформить заказ</button>
+            <button>продолжить покупки</button>
+        </div>
+    </div>
 </body>
