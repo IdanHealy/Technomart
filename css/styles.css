@@ -967,8 +967,8 @@
 }
 
 .catalog_button {
-    margin-top: 80px;
-    margin-left: 24px;
+    margin-top: 82px;
+    margin-left: 0px;
     width: 192px;
     height: 38px;
 }
@@ -2018,6 +2018,7 @@
     text-transform: uppercase;
     grid-row: 2;
     grid-column:  2/-2;
+    margin: 0;
 }
 
 .credit_delivery_warranty p {
@@ -2029,8 +2030,12 @@
     height: 49px;
     grid-row: 3;
     grid-column:  2/-2;
+    margin: 0px;
     
 }
+
+.sdw_first_slide p{
+    margin-top: 30px;}
 
 .cdw_shadow_block {
     display: flex;
@@ -2038,7 +2043,7 @@
     width: 240px;
     align-items: center;
     grid-area: 4/2/4/3;
-    transform: translateY(21px);
+    transform: translateY(19px);
 }
 
 .cdw_shadow_block::after{
@@ -2230,7 +2235,7 @@
 
 .catalog_aside h3 {
     grid-area: 2/2/2/2;
-    size: 1fr 1fr;
+    width: 940px;
     font-family: Cuprum;
     font-size: 20px;
     font-weight: 400;
@@ -2242,7 +2247,7 @@
 
 .catalog_aside p {
     grid-area: 3/2/4/2;
-    size: 1fr 1fr;
+    width: 940px;
     font-family: 'PT Sans';
     font-size: 13px;
     font-weight: 400;
