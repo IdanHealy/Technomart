@@ -21,7 +21,7 @@
             <div class="header_menu">
                 <div class="header_menu-logotype">
                     <a href="index.html">
-                        <img src="img/Logos/logo-technomart.svg" alt="logotype" width="108" height="18">
+                        <img src="img/Logos/logo-technomart.svg" alt="Техномарт" width="108" height="18" >
                     </a>
                 </div>
                 <div class="header_menu-search">
@@ -152,8 +152,8 @@
                             <a href="catalog.html">открыть каталог</a>
                         </button>
                     </div>
-                        <button class="button_slide_one"></button>
-                        <button class="button_slide_two button_current"></button>
+                        <button class="button_slide_one" aria-label="предидущий слайд"></button>
+                        <button class="button_slide_two button_current" aria-label="следущий слайд"></button>
                 </div>
                 <div class="saa3">
                     <div class="saa_item sales">
@@ -256,7 +256,6 @@
                     <a href="# ">ВСЕ ПРОИЗВОДИТЕЛИ</a>
                 </button>
             </div>
-            <div>
                 <div class="developers_logos">
                     <div class="developers_logos_card">
                         <a href="#">
@@ -299,7 +298,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!----секция с описанием полезных услуг-->
@@ -309,15 +307,15 @@
                     <div class="cdw_shadow_block">
                         <div class="cdw_buttons_container">
                             
-                                <input type="checkbox" name="delivery" id="1" checked>
+                                <input type="checkbox" name="delivery" id="1" checked aria-label="Доставка">
                             <label for="1">
                                 Доставка
                             </label>
-                                <input type="checkbox" name="warranty" id="2">
+                                <input type="checkbox" name="warranty" id="2" aria-label="Гарантия">
                             <label for="2">
                                 Гарантия
                             </label>
-                                <input type="checkbox" name="credit" id="3">
+                                <input type="checkbox" name="credit" id="3" aria-label="Кредит">
                                 <label for="3">
                                     Кредит
                                 </label>
@@ -353,7 +351,7 @@
                 <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
                 <a href="# " class="js_open_map">
                     <img src="img/content/adress-map.png" width="300" height="158" alt="карта"></a>
-                <button class="map_button button_style" ><a href="#">Заблудились? Напишите нам!</a></button>
+                <button class="map_button button_style" aria-label="Написать письмо"><a href="#">Заблудились? Напишите нам!</a></button>
             </div>
         </section>
     </main>
@@ -361,7 +359,7 @@
     <footer class="mainpagefooter">
         <div class="footer_content_first">
             <div class="logo_footer">
-                <a href="#"><img src="img/Logos/footer-logo.png" alt="LOGO" width="220" height="68"></a>
+                <a href="#"><img src="img/Logos/footer-logo.png" alt="ТЕХНОМАРТ" width="220" height="68"></a>
             </div>
             <nav class="footer_navigation">
                 <ul>
@@ -406,13 +404,13 @@
             <div class="footer_third_content">
                 <p>© 2010–2021 Компания «Техномарт» <br> Все права защищены</p>
                 <div class="all_icon_in_footer_container">
-                    <div class="icon-footer-containerVK">
+                    <div class="icon-footer-containerVK" aria-label="Вконтакте" role="img">
                         <a href="#"></a>
                     </div>
                     <div class="icon-footer-container2">
-                        <a href="#"></a>
+                        <a href="#" aria-label="facebook" role="img"></a>
                     </div>
-                    <div class="icon-footer-container3">
+                    <div class="icon-footer-container3" aria-label="instagram" role="img">
                         <a href="#"></a>
                     </div>
                 </div>
@@ -433,13 +431,13 @@
         <form class="modal__name">
             <fieldset>
                 <legend>Ваше имя:</legend>
-                <input type="text" placeholder="  Имя Фамилия">
+                <input type="name" placeholder="  Имя Фамилия">
             </fieldset>
         </form>
         <form class="modal__email">
             <fieldset>
                 <legend>Ваш e-mail:</legend>
-                <input type="text" placeholder="  email@example.com">
+                <input type="email" placeholder="  email@example.com">
             </fieldset>
         </form>
         <form class="modal__text">
@@ -450,14 +448,14 @@
         </form>
         <form class="modal__submit">
             <fieldset>
-                <input type="submit">
+                <input type="submit" aria-label="Отправить">
             </fieldset>
         </form>
     </div>
     <div class="map__modal modal">
         <button class="cancel__button" aria-label="Закрыть"></button>
         <!--<img src="../Technomart-Project-for-HTMLAcademy/img/map/map.png" width="943" height="442" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8190704953884!2d30.31517031618895!3d59.96832466666546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0404761c7ba6772!2zNTnCsDU4JzA2LjAiTiAzMMKwMTknMDIuNSJF!5e0!3m2!1sru!2sru!4v1657048977422!5m2!1sru!2sru" width="943" height="442" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8190704953884!2d30.31517031618895!3d59.96832466666546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0404761c7ba6772!2zNTnCsDU4JzA2LjAiTiAzMMKwMTknMDIuNSJF!5e0!3m2!1sru!2sru!4v1657048977422!5m2!1sru!2sru" width="943" height="442" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="карта"></iframe>    </div>
 </body>
 
 </html>

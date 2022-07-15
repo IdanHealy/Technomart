@@ -1112,6 +1112,10 @@
     z-index: 3;
 }
 
+.item_container_buttons:focus{
+    z-index: 3;
+}
+
 .item_container_buttons button{
     width: 135px;
     height: 35px;
@@ -1125,6 +1129,7 @@
     color:white;
     border-radius: 3px;
     margin-bottom: 10px;
+    tabindex: 
 }
 
 
@@ -1147,6 +1152,11 @@
 
 .buy:active{
     background-color: #518534;
+    z-index: 3;
+}
+
+.buy:focus{
+    z-index:3;
 }
 
 .in_bookmarks{
@@ -1166,7 +1176,13 @@
 
 .in_bookmarks:active{
     opacity: 0.5;
+    z-index: 3;
 }
+
+.in_bookmarks:focus{
+    z-index: 3;
+}
+    
 
 .item_cover {
     display: grid;
@@ -2403,6 +2419,8 @@
     width: 140px;
     height: 48px;
     justify-content: space-between;
+    padding-left: 72px;
+    padding-top: 10px;
 }
 
 .icon-footer-containerVK {

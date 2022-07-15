@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="Icon-Composer-icon.ico">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <meta charset="utf-8">
     <meta lang="ru">
@@ -128,31 +128,31 @@
                         <fieldset>
                             <legend>производители:</legend>
                                 <label class="check option">
-                                    <input class="check__input" type="checkbox" checked>
+                                    <input class="check__input" type="checkbox" checked aria-hidden="Bosh">
                                     <span class="check__box"></span>
                                     Bosh    
                                 </label>
                            
                                 <label class="check option">
-                                    <input class="check__input" type="checkbox">
+                                    <input class="check__input" type="checkbox" aria-hidden="Интерскол">
                                     <span class="check__box"></span>
                                     Интерскол
                                 </label>
                             
                                 <label class="check option">
-                                    <input class="check__input" type="checkbox" checked>
+                                    <input class="check__input" type="checkbox" checked aria-hidden="Макита">
                                     <span class="check__box"></span>
                                     Makita
                                 </label>
                            
                                 <label class="check option">
-                                    <input class="check__input" type="checkbox" disabled>
+                                    <input class="check__input" type="checkbox" disabled aria-hidden="Девальт">
                                     <span class="check__box"></span>
                                     Dewalt
                                 </label>
                           
                                 <label class="check option">
-                                    <input class="check__input" type="checkbox" disabled checked>
+                                    <input class="check__input" type="checkbox" disabled checked aria-hidden="Хитачи">
                                     <span class="check__box"></span>
                                     hitachi
                                 </label>      
@@ -164,12 +164,12 @@
                                 <legend>Питание:</legend>
 
                                 <label class="radio option">
-                                <input class="radio__input" type="radio">
+                                <input class="radio__input" type="radio" aria-hidden="аккумуляторные">
                                 <span class="radio__box"></span>
                                 аккумуляторные</label>
 
                                 <label class="radio option">
-                                <input class="radio__input" type="radio">
+                                <input class="radio__input" type="radio" aria-hidden="Сетевые">
                                 <span class="radio__box"></span>
                                 сетевые</label>
 
@@ -191,8 +191,8 @@
                             <li>по цене</li>
                             <li>по типу</li>
                             <li>по функционалу</li>
-                            <button></button>
-                            <button></button>
+                            <button aria-label="Сортировка по убыванию"></button>
+                            <button aria-label="Сортировка по возрастанию"></button>
                         </ul>
                     </div>
 
@@ -354,19 +354,24 @@
             <div class="footer_third_content">
                 <p>© 2010–2021 Компания «Техномарт» <br> Все права защищены</p>
                 <div class="all_icon_in_footer_container">
-                    <div class="icon-footer-containerVK">
+                    <div class="icon-footer-containerVK" aria-label="Вконтакте" role="img">
                         <a href="#"></a>
                     </div>
                     <div class="icon-footer-container2">
-                        <a href="#"></a>
+                        <a href="#" aria-label="facebook" role="img"></a>
                     </div>
-                    <div class="icon-footer-container3">
+                    <div class="icon-footer-container3" aria-label="instagram" role="img">
                         <a href="#"></a>
                     </div>
                 </div>
-                <div>Обратная связь:<br><address><a href="malito:mail@htmlacademy.ru">mail@htmlacademy.ru</a></address></div>
+                <div>Обратная связь:<br>
+                    <address>
+                        <a href="malito:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </address>
+                </div>
                 <div>Разработано -<br>
-                    <a class="footer_link" href="https://htmlacademy.ru/ ">HTML Academy</a></div>
+                    <a class="footer_link" href="https://htmlacademy.ru/ ">HTML Academy</a>
+                </div>
             </div>
         </div>
     </footer>
