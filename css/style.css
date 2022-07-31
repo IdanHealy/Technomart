@@ -2560,20 +2560,21 @@ address a:active {
 }
 
 .modal__name input{
-    width: 220px;
-    height: 38px;
+    width: 196px;
+    height: 34px;
     border: 2px solid lightgray;
     border-radius: 2px;
     font-family: PT Sans;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
+    padding: 0px 10px;
 }
 .modal__email{
     display: flex;
     justify-content: start;
     align-items: flex-end;
-    width: 100%;
+    width:100%;
     height: 119px;
     grid-row: 1;
     grid-column: 2;
@@ -2581,6 +2582,8 @@ address a:active {
 
 .modal__email fieldset{
     border: none;
+    padding: auto;
+    padding-left: 5px;
 }
 
 .modal__email legend{
@@ -2591,14 +2594,15 @@ address a:active {
 }
 
 .modal__email input{
-    width: 220px;
-    height: 38px;
+    width: 196px;
+    height: 34px;
     border: 2px solid lightgray;
     border-radius: 2px;
     font-family: PT Sans;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
+    padding: 0px 10px;
 
 }
 
@@ -2611,7 +2615,7 @@ address a:active {
 .modal__text fieldset{
     border: none;
     padding: none;
-    margin-left: 55px;
+    margin-left: 65px;
 }
 
 .modal__text legend{
@@ -2622,8 +2626,8 @@ address a:active {
 }
 
 .modal__text textarea{
-    width: 477px;
-    height: 114px;
+    width: 436px;
+    height: 94px;
     border: 2px solid lightgray;
     border-radius: 2px;   
     font-family: PT Sans;
@@ -2631,6 +2635,9 @@ address a:active {
     font-weight: 400;
     line-height: 24px;
     resize: none;
+    padding: 8px 10px;
+    
+    
 }
 
 .modal__submit{
