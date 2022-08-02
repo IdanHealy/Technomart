@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Technomart-Project-for-HTMLAcademy/css/style.css">
+    <link rel="stylesheet" href="../Technomart-Project-for-HTMLAcademy/css/style.min.css">
     <link rel="stylesheet" href="../Technomart-Project-for-HTMLAcademy/css/normalize.css">
     <link rel="icon" href="Icon-Composer-icon.ico">
     <meta lang="ru">
@@ -192,10 +192,10 @@
             <div class="item_container">
                 <div class="item_container_buttons">
                     <button class="buy">
-                        <a href="">купить</a>
+                        <span>купить</span>
                     </button>
                     <button class="in_bookmarks">
-                        <a href="">в закладки</a></a>
+                        <span>в закладки</span>
                     </button>
                 </div>
                 <div class="item_cover">
@@ -210,7 +210,14 @@
             </div>
             <div class="item_container">
                 <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
-                <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button><a href=""></a></div>
+                <div class="item_container_buttons">
+                    <button class="buy">
+                        <span>купить</span>
+                    </button>
+                    <button class="in_bookmarks">
+                        <span>в закладки</span>
+                    </button>
+                </div>
                 <div class="item_cover">
                     <img class="item_cover_img" src="img/content/bfg-3000.png" width="127" height="112" alt="BFG-3000">
                 </div>
@@ -222,7 +229,13 @@
             </div>
 
             <div class="item_container">
-                <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></a></button></div>
+                <div class="item_container_buttons"><button class="buy">
+                    <span>купить</span>
+                </button>
+                <button class="in_bookmarks">
+                    <span>в закладки</span>
+                </button>
+            </div>
                 <div class="item_cover">
                     <img class="item_cover_img" src="img/content/bfg-6000.png" width="144" height="128" alt="BFG-6000">
                 </div>
@@ -235,7 +248,14 @@
 
             <div class="item_container">
                 <img class="new" src="img/decorations/Каталог new.svg" width="70px" height="70px">
-                <div class="item_container_buttons"><button class="buy"><a href="">купить</a></button><button class="in_bookmarks"><a href="">в закладки</a></button></div>
+                <div class="item_container_buttons">
+                    <button class="buy">
+                        <span>купить</span>
+                    </button>
+                    <button class="in_bookmarks">
+                        <span>в закладки</span>
+                    </button>
+                </div>
                 <div class="item_cover">
                     <img class="item_cover_img" src="img/content/bfg-2000.png" width="127" height="112">
                 </div>
@@ -426,37 +446,42 @@
         </div>
     </footer>
 
-    <div class="input__modal modal--hidden">
+    <form class="input__modal modal--hidden">
         <button class="cancel__button" aria-label="Закрыть"></button>
-        <form class="modal__name">
+
+        <div class="modal__name">
             <fieldset>
                 <legend>Ваше имя:</legend>
-                <input type="name" placeholder="Имя Фамилия">
+                <input type="name" placeholder="Имя Фамилия" name="selfname">
             </fieldset>
-        </form>
-        <form class="modal__email">
+        </div>
+        
+        <div class="modal__email">
             <fieldset>
                 <legend>Ваш e-mail:</legend>
-                <input type="email" placeholder="email@example.com">
+                <input type="email" placeholder="email@example.com" name="email">
             </fieldset>
-        </form>
-        <form class="modal__text">
+        </div>
+
+        <div class="modal__text">
             <fieldset>
                 <legend>Текст письма:</legend>
-                <textarea placeholder="В свободной форме"></textarea>
+                <textarea placeholder="В свободной форме" name="mail-text" ></textarea>
             </fieldset>
-        </form>
-        <form class="modal__submit">
+        </div>
+        
+        <div class="modal__submit">
             <fieldset>
                 <input type="submit" aria-label="Отправить" class="button_style">
             </fieldset>
-        </form>
-    </div>
+        </div>
+        
+    </form>
     <div class="map__modal modal--hidden">
         <button class="cancel__button" aria-label="Закрыть"></button>
         <!--<img src="../Technomart-Project-for-HTMLAcademy/img/map/map.png" width="943" height="442" alt="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">-->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8190704953884!2d30.31517031618895!3d59.96832466666546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0404761c7ba6772!2zNTnCsDU4JzA2LjAiTiAzMMKwMTknMDIuNSJF!5e0!3m2!1sru!2sru!4v1657048977422!5m2!1sru!2sru" width="943" height="442" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="карта"></iframe></div>
-        <script src="../Technomart-Project-for-HTMLAcademy/js/scriptForModal.js"></script>
+        <script src="../Technomart-Project-for-HTMLAcademy/js/scriptsForIndexModal.min.js"></script>
 </body>
 
 </html>
