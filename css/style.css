@@ -221,7 +221,7 @@
     width: 150px;
     height: 42px;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .header_menu-bookmarks a{
@@ -1016,7 +1016,7 @@
     background-color: transparent;
     border: none;
     }
-    
+
 .button_slide_two{
     width: 22px;
     height: 40px;
@@ -1132,7 +1132,7 @@
     text-transform: uppercase;
     color:white;
     border-radius: 3px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 
@@ -1151,7 +1151,7 @@
 
 .buy:hover{
     background-color: #5FBB2D;
-  
+
 }
 
 .buy:active{
@@ -1187,7 +1187,7 @@
 .in_bookmarks:focus{
     z-index: 3;
 }
-    
+
 
 .item_cover {
     display: grid;
@@ -1266,7 +1266,7 @@
     transform: rotate(45deg);
     position: relative;
     left: 26px;
-    
+
 }
 
 .red_price a {
@@ -1470,11 +1470,11 @@
     padding: 0;
     width: 220px;
   }
-  
+
 .range-filter {
     width: 220px;
   }
-  
+
 .price_filter legend {
     font-family: PT Sans;
     font-size: 17px;
@@ -1485,7 +1485,7 @@
     grid-area: 'price_filter';
     margin-bottom: 11px;
 }
-  
+
 .range-controls {
     position: relative;
     height: 40px;
@@ -1496,20 +1496,20 @@
     background-color: #F7F3EC;
     border-radius: 5px;
   }
-  
+
 .range-controls .scale {
     height: 2px;
     width: 180px;
     background: #d7dcde;
     margin-left: 20px;
   }
-  
+
 .range-controls .bar {
     width: 80%;
     height: 2px;
     background: #00ca74;
   }
-  
+
 .range-controls .toggle {
     position: absolute;
     top: 31px;
@@ -1523,23 +1523,23 @@
     box-shadow: 0 2px 1px 0 #cfcfcf;
     cursor: pointer;
   }
-  
+
 .range-controls .toggle-min {
     left: 18px;
   }
-  
+
 .range-controls .toggle-max {
     left: 160px;
     margin: 0;
   }
-  
+
 .price-controls {
     width: 220px;
     display: flex;
     justify-content: space-between;
     margin-right: 0;
   }
-  
+
 .price-controls label {
     font-family: PT Sans;
     font-size: 17px;
@@ -1555,7 +1555,7 @@
     align-items: center;
     margin-bottom: 25px;
   }
-  
+
 .price-controls input {
     width: 95px;
     height: 38px;
@@ -1653,30 +1653,30 @@
 }
 
 .check__input:checked + .check__box{
-    background: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.44741 7.48591L4.61841 10.3149L12.4014 18.0979L26.3334 4.16591L23.5054 1.33691L12.4014 12.4389L7.44741 7.48591Z' fill='%23B5B5B5'/%3E%3Cpath d='M21.1624 20C21.1624 20.542 20.7044 21 20.1624 21H3.16241C2.62041 21 2.16241 20.542 2.16241 20V3C2.16241 2.458 2.62041 2 3.16241 2H20.0704L21.6554 0.415C21.2034 0.146542 20.6881 0.00329969 20.1624 0H3.16241C1.51241 0 0.162415 1.35 0.162415 3V20C0.162415 21.65 1.51241 23 3.16241 23H20.1624C21.8124 23 23.1624 21.65 23.1624 20V10.171L21.1624 12.171V20Z' fill='%23B5B5B5'/%3E%3C/svg%3E") no-repeat; 
+    background: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.44741 7.48591L4.61841 10.3149L12.4014 18.0979L26.3334 4.16591L23.5054 1.33691L12.4014 12.4389L7.44741 7.48591Z' fill='%23B5B5B5'/%3E%3Cpath d='M21.1624 20C21.1624 20.542 20.7044 21 20.1624 21H3.16241C2.62041 21 2.16241 20.542 2.16241 20V3C2.16241 2.458 2.62041 2 3.16241 2H20.0704L21.6554 0.415C21.2034 0.146542 20.6881 0.00329969 20.1624 0H3.16241C1.51241 0 0.162415 1.35 0.162415 3V20C0.162415 21.65 1.51241 23 3.16241 23H20.1624C21.8124 23 23.1624 21.65 23.1624 20V10.171L21.1624 12.171V20Z' fill='%23B5B5B5'/%3E%3C/svg%3E") no-repeat;
 }
 
 .check__input:focus + .check__box{
     background: url("data:image/svg+xml,%3Csvg width='24' height='23' viewBox='0 0 24 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.16241 0H20.1624C21.8124 0 23.1624 1.35 23.1624 3V20C23.1624 21.65 21.8124 23 20.1624 23H3.16241C1.51241 23 0.162415 21.65 0.162415 20V3C0.162415 1.35 1.51241 0 3.16241 0ZM21.1624 3C21.1624 2.458 20.7044 2 20.1624 2H3.16241C2.62041 2 2.16241 2.458 2.16241 3V20C2.16241 20.542 2.62041 21 3.16241 21H20.1624C20.7044 21 21.1624 20.542 21.1624 20V3Z' fill='%23C5C5C5'/%3E%3C/svg%3E") no-repeat;
-    opacity: 100%; 
+    opacity: 100%;
 
 }
 
 .check__input:checked:focus + .check__box{
     background: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.44741 7.48591L4.61841 10.3149L12.4014 18.0979L26.3334 4.16591L23.5054 1.33691L12.4014 12.4389L7.44741 7.48591Z' fill='%23B5B5B5'/%3E%3Cpath d='M21.1624 20C21.1624 20.542 20.7044 21 20.1624 21H3.16241C2.62041 21 2.16241 20.542 2.16241 20V3C2.16241 2.458 2.62041 2 3.16241 2H20.0704L21.6554 0.415C21.2034 0.146542 20.6881 0.00329969 20.1624 0H3.16241C1.51241 0 0.162415 1.35 0.162415 3V20C0.162415 21.65 1.51241 23 3.16241 23H20.1624C21.8124 23 23.1624 21.65 23.1624 20V10.171L21.1624 12.171V20Z' fill='%23B5B5B5'/%3E%3C/svg%3E") no-repeat;
     opacity: 100%;
-     
+
 
 }
 
 .check__input:disabled + .check__box{
     background: url("data:image/svg+xml,%3Csvg width='24' height='23' viewBox='0 0 24 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.16241 0H20.1624C21.8124 0 23.1624 1.35 23.1624 3V20C23.1624 21.65 21.8124 23 20.1624 23H3.16241C1.51241 23 0.162415 21.65 0.162415 20V3C0.162415 1.35 1.51241 0 3.16241 0ZM21.1624 3C21.1624 2.458 20.7044 2 20.1624 2H3.16241C2.62041 2 2.16241 2.458 2.16241 3V20C2.16241 20.542 2.62041 21 3.16241 21H20.1624C20.7044 21 21.1624 20.542 21.1624 20V3Z' fill='%23C5C5C5'/%3E%3C/svg%3E") no-repeat;
-    opacity: 25%; 
+    opacity: 25%;
 }
 
 .check__input:disabled:checked + .check__box{
     background: url("data:image/svg+xml,%3Csvg width='27' height='23' viewBox='0 0 27 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.44741 7.48591L4.61841 10.3149L12.4014 18.0979L26.3334 4.16591L23.5054 1.33691L12.4014 12.4389L7.44741 7.48591Z' fill='%23B5B5B5'/%3E%3Cpath d='M21.1624 20C21.1624 20.542 20.7044 21 20.1624 21H3.16241C2.62041 21 2.16241 20.542 2.16241 20V3C2.16241 2.458 2.62041 2 3.16241 2H20.0704L21.6554 0.415C21.2034 0.146542 20.6881 0.00329969 20.1624 0H3.16241C1.51241 0 0.162415 1.35 0.162415 3V20C0.162415 21.65 1.51241 23 3.16241 23H20.1624C21.8124 23 23.1624 21.65 23.1624 20V10.171L21.1624 12.171V20Z' fill='%23B5B5B5'/%3E%3C/svg%3E") no-repeat;
-    opacity: 25%; 
+    opacity: 25%;
 }
 
 /*фильтр по питанию*/
@@ -1758,25 +1758,25 @@
 
 .radio__input:focus + .radio__box{
     background: url("data:image/svg+xml,%3Csvg width='26' height='25' viewBox='0 0 26 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.162415 12.5C0.162415 5.597 5.75941 0 12.6624 0C19.5654 0 25.1624 5.597 25.1624 12.5C25.1624 19.403 19.5654 25 12.6624 25C5.75941 25 0.162415 19.403 0.162415 12.5ZM21.1624 12.5C21.1624 7.813 17.3494 4 12.6624 4C7.97541 4 4.16241 7.813 4.16241 12.5C4.16241 17.187 7.97541 21 12.6624 21C17.3494 21 21.1624 17.187 21.1624 12.5Z' fill='%23B5B5B5'/%3E%3C/svg%3E") no-repeat;
-    opacity: 100%; 
+    opacity: 100%;
 
 }
 
 .radio__input:checked:focus + .radio__box{
     background: url("data:image/svg+xml,%3Csvg width='26' height='25' viewBox='0 0 26 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.162415 12.5C0.162415 5.597 5.75941 0 12.6624 0C19.5654 0 25.1624 5.597 25.1624 12.5C25.1624 19.403 19.5654 25 12.6624 25C5.75941 25 0.162415 19.403 0.162415 12.5ZM21.1624 12.5C21.1624 7.813 17.3494 4 12.6624 4C7.97541 4 4.16241 7.813 4.16241 12.5C4.16241 17.187 7.97541 21 12.6624 21C17.3494 21 21.1624 17.187 21.1624 12.5Z' fill='%23B5B5B5'/%3E%3Cpath d='M12.6624 17C15.1477 17 17.1624 14.9853 17.1624 12.5C17.1624 10.0147 15.1477 8 12.6624 8C10.1771 8 8.16241 10.0147 8.16241 12.5C8.16241 14.9853 10.1771 17 12.6624 17Z' fill='%23B5B5B5'/%3E%3C/svg%3E") no-repeat;
     opacity: 100%;
-     
+
 
 }
 
 .radio__input:disabled + .radio__box{
     background: url("data:image/svg+xml,%3Csvg width='26' height='25' viewBox='0 0 26 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.162415 12.5C0.162415 5.597 5.75941 0 12.6624 0C19.5654 0 25.1624 5.597 25.1624 12.5C25.1624 19.403 19.5654 25 12.6624 25C5.75941 25 0.162415 19.403 0.162415 12.5ZM21.1624 12.5C21.1624 7.813 17.3494 4 12.6624 4C7.97541 4 4.16241 7.813 4.16241 12.5C4.16241 17.187 7.97541 21 12.6624 21C17.3494 21 21.1624 17.187 21.1624 12.5Z' fill='%23B5B5B5'/%3E%3C/svg%3E") no-repeat;
-    opacity: 25%; 
+    opacity: 25%;
 }
 
 .radio__input:disabled:checked + .radio__box{
     background: url("data:image/svg+xml,%3Csvg width='26' height='25' viewBox='0 0 26 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.162415 12.5C0.162415 5.597 5.75941 0 12.6624 0C19.5654 0 25.1624 5.597 25.1624 12.5C25.1624 19.403 19.5654 25 12.6624 25C5.75941 25 0.162415 19.403 0.162415 12.5ZM21.1624 12.5C21.1624 7.813 17.3494 4 12.6624 4C7.97541 4 4.16241 7.813 4.16241 12.5C4.16241 17.187 7.97541 21 12.6624 21C17.3494 21 21.1624 17.187 21.1624 12.5Z' fill='%23B5B5B5'/%3E%3Cpath d='M12.6624 17C15.1477 17 17.1624 14.9853 17.1624 12.5C17.1624 10.0147 15.1477 8 12.6624 8C10.1771 8 8.16241 10.0147 8.16241 12.5C8.16241 14.9853 10.1771 17 12.6624 17Z' fill='%23B5B5B5'/%3E%3C/svg%3E") no-repeat;
-    opacity: 25%; 
+    opacity: 25%;
 }
 
 .scroller_price {
@@ -2052,7 +2052,7 @@
     grid-row: 3;
     grid-column:  2/-2;
     margin: 0px;
-    
+
 }
 
 .sdw_first_slide p{
@@ -2552,7 +2552,7 @@ address a:active {
 }
 
 .modal__name fieldset{
-    border: none;   
+    border: none;
 }
 
 .modal__name legend{
@@ -2632,15 +2632,15 @@ address a:active {
     width: 436px;
     height: 94px;
     border: 2px solid lightgray;
-    border-radius: 2px;   
+    border-radius: 2px;
     font-family: PT Sans;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
     resize: none;
     padding: 8px 10px;
-    
-    
+
+
 }
 
 .modal__submit{
@@ -2687,7 +2687,7 @@ address a:active {
 .add-item__modal{
     width: 620px;
     height: 282px;
-    background: linear-gradient(to bottom, var(--basic-red-color) 7px,white 7px);   
+    background: linear-gradient(to bottom, var(--basic-red-color) 7px,white 7px);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     z-index: 1000;
     display: flex;
@@ -2787,7 +2787,7 @@ address a:active {
     100% { transform: translateY(0); }
     }
 
-.modal-show{
+.modal-show {
     animation-name: bounce;
     animation-duration: 0.6s;
     visibility: visible;
@@ -2799,7 +2799,7 @@ address a:active {
     margin: auto;
 }
 
-.modal-error{
+.modal-error {
     animation-name: shake;
     animation-duration: 0.6s;
 }
