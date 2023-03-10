@@ -1645,6 +1645,7 @@
     opacity: 50%;
     position: relative;
     transform: translateX(-23px);
+    cursor: pointer;
 }
 
 .check__input+.check__box:hover{
@@ -1745,6 +1746,7 @@
     opacity: 50%;
     position: relative;
     transform: translateX(-23px);
+    cursor: pointer;
 }
 
 .radio__input+.radio__box:hover{
@@ -1800,6 +1802,7 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .filters_header {
@@ -1876,6 +1879,7 @@
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: var(--basic-red-color);
+    cursor: pointer;
 }
 
 .sorting li:hover{
@@ -1962,6 +1966,7 @@
     font-weight: 400;
     line-height: 18px;
     color: white;
+    cursor: pointer;
 }
 
 .items_nav button:nth-child(2) {
@@ -1976,6 +1981,7 @@
     font-weight: 400;
     line-height: 18px;
     color: black;
+    cursor: pointer;
 }
 
 .items_nav button:nth-child(3) {
@@ -1990,6 +1996,7 @@
     font-weight: 400;
     line-height: 18px;
     color: black;
+    cursor: pointer;
 }
 
 .items_nav button:nth-child(4) {
@@ -2004,6 +2011,7 @@
     line-height: 18px;
     color: black;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .items_nav button:hover {
